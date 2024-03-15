@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Accounts\Handlers\Commands\" />
+    <Folder Include="Features\Accounts\Handlers\Queries\" />
+    <Folder Include="Features\Accounts\Requests\Commands\" />
+    <Folder Include="Features\Branches\Handlers\Commands\" />
+    <Folder Include="Features\Branches\Handlers\Queries\" />
+    <Folder Include="Features\Branches\Requests\" />
+    <Folder Include="Features\Clients\Handlers\Commands\" />
+    <Folder Include="Features\Clients\Handlers\Queries\" />
+    <Folder Include="Features\Clients\Requests\" />
+    <Folder Include="Features\Employees\Handlers\Commands\" />
+    <Folder Include="Features\Employees\Handlers\Queries\" />
+    <Folder Include="Features\Employees\Requests\" />
+    <Folder Include="Features\Offers\Handlers\Commands\" />
+    <Folder Include="Features\Offers\Handlers\Queries\" />
+    <Folder Include="Features\Offers\Requests\" />
+  </ItemGroup>
+
+</Project>

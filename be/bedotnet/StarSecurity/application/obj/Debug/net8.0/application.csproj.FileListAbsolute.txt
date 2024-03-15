@@ -1,0 +1,11 @@
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\bin\Debug\net8.0\application.deps.json
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\bin\Debug\net8.0\application.dll
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\bin\Debug\net8.0\application.pdb
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\obj\Debug\net8.0\application.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\obj\Debug\net8.0\application.AssemblyInfoInputs.cache
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\obj\Debug\net8.0\application.AssemblyInfo.cs
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\obj\Debug\net8.0\application.csproj.CoreCompileInputs.cache
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\obj\Debug\net8.0\application.dll
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\obj\Debug\net8.0\refint\application.dll
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\obj\Debug\net8.0\application.pdb
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\application\obj\Debug\net8.0\ref\application.dll

@@ -1,0 +1,11 @@
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\obj\Debug\net8.0\domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\obj\Debug\net8.0\domain.AssemblyInfoInputs.cache
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\obj\Debug\net8.0\domain.AssemblyInfo.cs
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\obj\Debug\net8.0\domain.csproj.CoreCompileInputs.cache
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\bin\Debug\net8.0\domain.deps.json
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\bin\Debug\net8.0\domain.dll
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\bin\Debug\net8.0\domain.pdb
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\obj\Debug\net8.0\domain.dll
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\obj\Debug\net8.0\refint\domain.dll
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\obj\Debug\net8.0\domain.pdb
+D:\IT\Theory\ApTeach\Project 3\BE\StarSecurity\Domain\obj\Debug\net8.0\ref\domain.dll
