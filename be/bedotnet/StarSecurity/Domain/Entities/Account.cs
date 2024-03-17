@@ -12,6 +12,7 @@ namespace domain.Entities
     public class Account : Entity
     {
         [Required]
+        [EmailAddress]
         public Email Email { get; protected set; }
         [Required]
         public string PasswordHash { get; protected set; }

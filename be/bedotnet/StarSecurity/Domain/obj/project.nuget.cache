@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f50BCT/ploQNjfs4Kdhg2Hfy4ARBoi+yld5tKiGR/7f3Rb64JKSSEEV0kMfMzgSTzdLH0yLsWSDOkk067C0hbQ==",
+  "dgSpecHash": "Zu3u9lp/vNLyEpasUwZYpx/N2ZDFUHi5bKxckjWbOsr1AfJiQkmvJCQ2ioD1uy8I0Zn2VRL6+xu7Z1YJYRA7YQ==",
   "success": true,
-  "projectFilePath": "D:\\IT\\Theory\\ApTeach\\Project 3\\BE\\StarSecurity\\Domain\\domain.csproj",
+  "projectFilePath": "D:\\IT\\Theory\\ApTeach\\Project 3\\StarSecurity\\Star-Security-2\\be\\bedotnet\\StarSecurity\\Domain\\domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

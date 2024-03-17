@@ -15,6 +15,6 @@ namespace application.DTOs.Common.GetDTO
         public Gender Gender { get; protected set; }
         public string? Address { get; protected set; }
         public string? ContactNumber { get; protected set; }
-        public Email EmailAdress { get; protected set; }
+        public Email Email { get; protected set; }
     }
 }

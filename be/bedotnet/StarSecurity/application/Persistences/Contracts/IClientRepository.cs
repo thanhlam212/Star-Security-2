@@ -1,4 +1,5 @@
-﻿using domain.Entities;
+﻿using application.Persistences.Contracts.Common;
+using domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace application.Persistences.Contracts
 {
-	public interface IClientRepository : IGenericRepository<Client>
+    public interface IClientRepository : IHumanRepository<Client>
 	{
 	}
 }
