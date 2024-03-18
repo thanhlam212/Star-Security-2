@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Route, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,13 +9,14 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 
 export class NavbarComponent implements OnInit{
-  
+  header_variable = false;
+  loggedIn: boolean = false;
+
   constructor(){}
 
   ngOnInit(): void {
   }
 
-  header_variable = false;
   @HostListener("window:scroll", [])
   onWindowScroll() {
     if (window.scrollY > 0) {
