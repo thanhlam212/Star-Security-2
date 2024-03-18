@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace application.Features.Accounts.Requests.Queries
 {
-	public class GetAccountByEmailRequest : IRequest<List<GetAccountDTO>>
+	public class GetAccountByEmailRequest : IRequest<GetAccountDTO>
 	{
 		public Email Email { get; set; }
 	}

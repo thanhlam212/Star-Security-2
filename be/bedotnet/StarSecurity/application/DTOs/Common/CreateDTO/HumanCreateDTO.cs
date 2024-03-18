@@ -20,6 +20,6 @@ namespace application.DTOs.Common.CreateDTO
 		public string? ContactNumber { get; protected set; }
 		[Required]
 		[EmailAddress]
-		public Email EmailAdress { get; protected set; }
+		public Email Email { get; protected set; }
 	}
 }

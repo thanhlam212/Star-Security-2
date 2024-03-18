@@ -423,11 +423,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT\\Theory\\ApTeach\\Project 3\\BE\\StarSecurity\\application\\application.csproj",
+      "projectUniqueName": "D:\\IT\\Theory\\ApTeach\\Project 3\\StarSecurity\\Star-Security-2\\be\\bedotnet\\StarSecurity\\application\\application.csproj",
       "projectName": "application",
-      "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\BE\\StarSecurity\\application\\application.csproj",
+      "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\StarSecurity\\Star-Security-2\\be\\bedotnet\\StarSecurity\\application\\application.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\BE\\StarSecurity\\application\\obj\\",
+      "outputPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\StarSecurity\\Star-Security-2\\be\\bedotnet\\StarSecurity\\application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -444,8 +444,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\IT\\Theory\\ApTeach\\Project 3\\BE\\StarSecurity\\Domain\\domain.csproj": {
-              "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\BE\\StarSecurity\\Domain\\domain.csproj"
+            "D:\\IT\\Theory\\ApTeach\\Project 3\\StarSecurity\\Star-Security-2\\be\\bedotnet\\StarSecurity\\Domain\\domain.csproj": {
+              "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\StarSecurity\\Star-Security-2\\be\\bedotnet\\StarSecurity\\Domain\\domain.csproj"
             }
           }
         }

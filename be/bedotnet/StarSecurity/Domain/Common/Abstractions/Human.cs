@@ -22,7 +22,7 @@ namespace domain.Common.Abstractions
 		public string? ContactNumber { get; protected set; }
 		[Required]
 		[EmailAddress]
-		public Email EmailAdress { get; protected set; }
+		public Email Email { get; protected set; }
 		protected Human(Name name,
 						Gender gender,
 						string address,
@@ -33,7 +33,7 @@ namespace domain.Common.Abstractions
 			Gender = gender;
 			Address = address;
 			ContactNumber = contractNumber;
-			EmailAdress = email;
+			Email = email;
 		}
 	}
 }
