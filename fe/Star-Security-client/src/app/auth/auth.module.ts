@@ -6,13 +6,15 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminLoginComponent
   ],
   imports: [
     CommonModule,

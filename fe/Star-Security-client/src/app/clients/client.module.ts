@@ -7,6 +7,7 @@ import { AboutComponent } from './feature/about/about.component';
 import { ClientRoutingModule } from './client-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServicesComponent } from './feature/services/services.component';
 
 
 
@@ -17,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     AboutComponent,
+    ServicesComponent,
   ],
   imports: [
     CommonModule,
