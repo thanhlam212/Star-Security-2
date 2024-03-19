@@ -11,6 +11,10 @@
   "private": true,
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 55924e6b9b32f7d91cb0c661a905dcd49d0d4a33
     "@angular/animations": "^17.0.0",
     "@angular/common": "^17.0.0",
     "@angular/compiler": "^17.0.0",
