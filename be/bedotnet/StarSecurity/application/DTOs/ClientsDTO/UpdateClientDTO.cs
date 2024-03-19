@@ -11,6 +11,6 @@ namespace application.DTOs.ClientsDTO
 {
 	public class UpdateClientDTO : HumanUpdateDTO
 	{
-		public Guid? CurrentOffer { get; protected set; }
+		public Guid? CurrentOffer { get; set; }
 	}
 }

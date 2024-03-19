@@ -11,22 +11,38 @@ namespace domain.Entities
 {
     public class Offer : Entity
     {
-        [Required]
-        public decimal TotalPayment { get; protected set; }
-        [Required]
-        public DateTime StartDate { get; protected set; }
-        [Required]
-        public DateTime EndDate { get; protected set; }
-        [Required]
-        public ProvideService ProvideService { get; protected set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public decimal TotalPayment { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public DateTime StartDate { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public DateTime EndDate { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public ProvideService ProvideService { get; set; }
 
-        //n-1 with Employee
-        [Required]
-        public Guid EmployeeId { get; protected set; }
-        public virtual Employee Employee { get; protected set; }
-        //n-1 with Client
-        [Required]
-        public Guid ClientId { get; protected set; }
-        public virtual Client Client { get; protected set; }
-    }
+		//n-1 with Employee
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Guid EmployeeId { get; set; }
+        public virtual Employee? Employee { get; set; }
+		//n-1 with Client
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Guid ClientId { get; set; }
+        public virtual Client? Client { get; set; }
+
+		public Offer(decimal totalPayment, 
+            DateTime startDate, 
+            DateTime endDate, 
+            ProvideService provideService, 
+            Guid employeeId, 
+            Guid clientId) 
+            : base()
+        {
+			TotalPayment = totalPayment;
+			StartDate = startDate;
+			EndDate = endDate;
+			ProvideService = provideService;
+			EmployeeId = employeeId;
+			ClientId = clientId;
+		}
+	}
 }

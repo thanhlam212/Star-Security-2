@@ -10,9 +10,9 @@ namespace application.DTOs.Auth
 {
 	public class LoginRequestDTO
 	{
-		[Required]
-		public Email Email { get; protected set; }
-		[Required]
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string Email { get; protected set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
 		public string PasswordHash { get; protected set; }
 	}
 }

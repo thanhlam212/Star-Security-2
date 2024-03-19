@@ -12,19 +12,19 @@ namespace application.DTOs.EmployeesDTO
 {
 	public class CreateEmployeeDTO : HumanCreateDTO
 	{
-		[Required]
-		public string EmployeeCode { get; protected set; }
-		[Required]
-		public string EducationalQualification { get; protected set; }
-		[Required]
-		public Role Role { get; protected set; }
-		[Required]
-		public string Grade { get; protected set; }
-		public string? Achievements { get; protected set; }
-		[Required]
-		public ProvideService ProvideService { get; protected set; }
-		[Required]
-		public Guid BranchId { get; protected set; }
-		public Guid? CurrentOffer { get; protected set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string EmployeeCode { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string EducationalQualification { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Role Role { get;	set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string Grade { get; set; }
+		public string? Achievements { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public ProvideService ProvideService { get;	set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Guid BranchId { get; set; }
+		public Guid? CurrentOffer { get; set; }
 	}
 }

@@ -13,6 +13,6 @@ namespace application.DTOs.ClientsDTO
 {
 	public class CreateClientDTO : HumanCreateDTO
 	{
-		public Guid? CurrentOffer { get; protected set; }
+		public Guid? CurrentOfferId { get; set; }
 	}
 }

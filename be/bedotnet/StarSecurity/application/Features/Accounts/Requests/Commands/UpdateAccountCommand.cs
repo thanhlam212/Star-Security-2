@@ -11,5 +11,6 @@ namespace application.Features.Accounts.Requests.Commands
 	public class UpdateAccountCommand : IRequest<Unit> //Unit means return nothing => void type
 	{
 		public UpdateAccountDTO UpdateAccountDTO { get; set; }
+
 	}
 }

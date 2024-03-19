@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{764185BD-F1EC-453F-BE0C-A863D066F0AB}"
+	ProjectSection(SolutionItems) = preProject
+		ProblemNeedToBeResolved.txt = ProblemNeedToBeResolved.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{846CD82C-3491-4939-B40B-5E0A248077D6}"
 EndProject
@@ -15,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastrucutre", "infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "domain", "Domain\domain.csproj", "{D020124A-4D2B-42F8-9E27-205299ACF9F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application", "application\application.csproj", "{3047079F-39E1-45B1-A409-6D771D055454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "application", "application\application.csproj", "{3047079F-39E1-45B1-A409-6D771D055454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

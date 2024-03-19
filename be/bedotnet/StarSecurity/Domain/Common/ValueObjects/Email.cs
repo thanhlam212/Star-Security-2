@@ -1,4 +1,5 @@
-﻿using System;
+﻿using domain.Common.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace domain.Common.ValueObjects
 {
-    public class Email
+    public sealed class Email : ValueObject
     {
         public string Value { get; }
         public Email(string value)
@@ -36,5 +37,10 @@ namespace domain.Common.ValueObjects
                 return false;
             }
         }
-    }
+
+		public override IEnumerable<object> GetAutomicValues()
+		{
+			yield return Value;
+		}
+	}
 }

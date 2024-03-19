@@ -11,6 +11,6 @@ namespace application.DTOs.ClientsDTO
 {
     public class GetClientDTO : HumanGetDTO
     {
-        public Offer? CurrentOffer {  get; protected set; }
+        public Offer? CurrentOffer {  get; set; }
     }
 }

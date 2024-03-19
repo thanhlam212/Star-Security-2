@@ -9,7 +9,7 @@ namespace application.DTOs.Common.DeleteDTO
 {
 	public abstract class BasicDeleteDTO
 	{
-		[Required]
+		[Required(ErrorMessage = "{PropertyName} is required")]
 		public Guid Id { get; set; }
 	}
 }

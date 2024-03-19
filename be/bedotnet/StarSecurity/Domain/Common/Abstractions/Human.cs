@@ -13,21 +13,22 @@ namespace domain.Common.Abstractions
 {
     public abstract class Human : Entity
 	{
-		[Required]
-		public Name Name { get; protected set; }
-		[Required]
-		public Gender Gender { get; protected set; }
-		public string? Address { get; protected set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Name Name { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Gender Gender { get; set; }
+		public string? Address { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
 		[Phone]
-		public string? ContactNumber { get; protected set; }
-		[Required]
+		public string? ContactNumber { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
 		[EmailAddress]
-		public Email Email { get; protected set; }
+		public Email Email { get; set; }
 		protected Human(Name name,
 						Gender gender,
-						string address,
-						string contractNumber,
-						Email email)
+						string? address,
+						string? contractNumber,
+						Email email) : base()
 		{
 			Name = name;
 			Gender = gender;

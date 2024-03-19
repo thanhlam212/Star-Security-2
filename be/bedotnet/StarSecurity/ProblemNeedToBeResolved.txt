@@ -1,0 +1,32 @@
+//////////////////////
+Done:
+*)Domain
+	+ Enum, valueObject, Abstraction
+	+ 5 entities: Offer, Client, Employee, Branch, Account
+*)Application 
+	+ Mapping
+	+ DTOs
+	+ CQRS: Account, Branch
+
+//////////////////////
+Missing:
+*)API
+*)Infrastructure
+*)JWT
+*)Login, register
+*)Bcrypt
+*)Application
+	+ FluentValidator
+	+ CQRS: Offer, Client, Employee
+	+ Interface
+*)Domain
+	+ DomainEvent
+
+//////////////////////
+Problem Arise
+*) Client can have multiple offers
+*) Delete/Create/Update Date when Delete/Create/Update
+*) Update current offer when offer created
+*) Delete current offer with expired offer
+
+*) Get() is getting all, even deleted => Maybe no need in this project because only admin can get

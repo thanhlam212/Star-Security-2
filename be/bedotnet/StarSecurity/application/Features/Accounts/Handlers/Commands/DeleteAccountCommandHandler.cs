@@ -14,12 +14,10 @@ namespace application.Features.Accounts.Handlers.Commands
 	public class DeleteAccountCommandHandler : IRequestHandler<DeleteAccountCommand, Unit>
 	{
 		private readonly IAccountRepository _accountRepository;
-		private readonly IMapper _mapper;
 
-		public DeleteAccountCommandHandler(IAccountRepository accountRepository, IMapper mapper)
+		public DeleteAccountCommandHandler(IAccountRepository accountRepository)
 		{
 			_accountRepository = accountRepository;
-			_mapper = mapper;
 		}
 		public async Task<Unit> Handle(DeleteAccountCommand request, CancellationToken cancellationToken)
 		{

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using domain.Common.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace domain.Common.ValueObjects
 {
-    public class Name
-    {
+    public class Name : ValueObject
+	{
         //create variable Value to storage Name
         public string Value { get; }
 
@@ -23,5 +24,10 @@ namespace domain.Common.ValueObjects
             //if oke, assign value to Value of Name => Name.Value
             Value = value;
         }
-    }
+
+		public override IEnumerable<object> GetAutomicValues()
+		{
+			yield return Value;
+		}
+	}
 }

@@ -9,7 +9,7 @@ namespace application.DTOs.Common.UpdateDTO
 {
 	public abstract class BasicUpdateDTO
 	{
-		[Required]
+		[Required(ErrorMessage = "{PropertyName} is required")]
 		public Guid Id { get; set; }
 	}
 }

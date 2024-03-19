@@ -12,12 +12,12 @@ namespace application.DTOs.AccountsDTO
 {
 	public class CreateAccountDTO : BasicCreateDTO
 	{
-		[Required]
+		[Required(ErrorMessage = "{PropertyName} is required")]
 		[EmailAddress] 
-		public Email Email { get; protected set; }
-		[Required]
-		public string PasswordHash { get; protected set; }
-		[Required]
-		public Guid EmployeeId { get; protected set; }
+		public string Email { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string PasswordHash { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Guid EmployeeId { get; set; }
 	}
 }
