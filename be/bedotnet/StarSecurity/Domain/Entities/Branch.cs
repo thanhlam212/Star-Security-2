@@ -12,18 +12,30 @@ namespace domain.Entities
 {
     public class Branch : Entity
     {
-        [Required]
-        public Name Name { get; set; }
-        [Required]
-        public Region Region { get; set; }
-        [Required]
-        public string ContactDetail { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Name Name { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Region Region { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string ContactDetail { get; set; }
 
         // 1 - n with Employee
-        public virtual ICollection<Employee> Employee { get; set; }
+        public virtual ICollection<Employee>? Employee { get; set; }
 
         // Manager
         public Guid? ManagerId { get; set; }
-        public virtual Employee Manager { get; set; }
+        public virtual Employee? Manager { get; set; }
+
+        public Branch(Name name, 
+            Region region, 
+            string contactDetail, 
+            Guid? employeeId) 
+            : base()
+        {
+			Name = name;
+			Region = region;
+			ContactDetail = contactDetail;
+			ManagerId = employeeId;
+		}
     }
 }

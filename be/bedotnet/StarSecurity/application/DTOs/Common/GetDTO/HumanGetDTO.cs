@@ -11,10 +11,10 @@ namespace application.DTOs.Common.GetDTO
     public abstract class HumanGetDTO : BasicGetDTO
     {
 
-        public Name Name { get; protected set; }
-        public Gender Gender { get; protected set; }
-        public string? Address { get; protected set; }
-        public string? ContactNumber { get; protected set; }
-        public Email Email { get; protected set; }
+        public Name Name { get; set; }
+        public Gender Gender { get; set; }
+        public string? Address { get; set; }
+        public string? ContactNumber { get; set; }
+        public Email Email { get; set; }
     }
 }

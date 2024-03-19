@@ -1,4 +1,5 @@
-﻿using domain.Entities;
+﻿using domain.Common.ValueObjects;
+using domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,15 +11,12 @@ namespace application.Persistences.Contracts.Common
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<IReadOnlyCollection<T>> GetAllReadOnlyAsync();
-        Task<IEnumerable<T>> GetAllAsync();
-        //Task<T> GetByConditionAsync<TValue>(Expression<Func<T, bool>> predicate);
-        Task<T> GetByIdAsync(Guid Id);
-
-		//Get all but deleted
-		Task<IEnumerable<T>> GetAllWithoutDeletedAsync();
-		Task<T> GetByIdWithoutAsync(Guid Id);
-
+		//Task<IReadOnlyCollection<T>> GetAllReadOnlyAsync();
+		//Task<IEnumerable<T>> GetNotDeletedAsync();
+		//Task<T> GetByConditionAsync<TValue>(Expression<Func<T, bool>> predicate);
+		Task<IEnumerable<T>> GetAllAsync();
+		Task<T> GetByIdAsync(Guid Id);
+		
 		Task<bool> AddAsync(T entity);
         Task<bool> DeleteAsync(T entity);
         Task<bool> UpdateAsync(T entity);

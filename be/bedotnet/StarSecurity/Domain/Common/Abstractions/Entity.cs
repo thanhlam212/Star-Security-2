@@ -19,10 +19,9 @@ namespace domain.Common.Abstractions
 
 		[Key]
         public Guid Id { get; }
-        [Required]
         public DateTime CreateDate { get; protected set; }
         public DateTime? DeleteDate { get; protected set; }
-		public DateTime? UpdatedDate { get; set; }
+		public DateTime? UpdatedDate { get; protected set; }
 
 		//constructor to create id and create date every times an entity created
 		protected Entity()

@@ -11,18 +11,18 @@ using System.Threading.Tasks;
 
 namespace application.Features.Accounts.Handlers.Queries
 {
-	public class GetAllCountRequestHandler : IRequestHandler<GetAllAccountRequest, ICollection<GetAccountDTO>>
+	public class GetAllAccountsRequestHandler : IRequestHandler<GetAllAccountsRequest, ICollection<GetAccountDTO>>
 	{
 		private readonly IAccountRepository _accountRepository;
 		private readonly IMapper _mapper;
 
-		public GetAllCountRequestHandler(IAccountRepository accountRepository, IMapper mapper)
+		public GetAllAccountsRequestHandler(IAccountRepository accountRepository, IMapper mapper)
 		{
 			_accountRepository = accountRepository;
 			_mapper = mapper;
 		}
 
-		public async Task<ICollection<GetAccountDTO>> Handle(GetAllAccountRequest request, CancellationToken cancellationToken)
+		public async Task<ICollection<GetAccountDTO>> Handle(GetAllAccountsRequest request, CancellationToken cancellationToken)
 		{
 			var accounts = await _accountRepository.GetAllAsync() ?? throw new Exception("No Account found!");
 			return _mapper.Map<ICollection<GetAccountDTO>>(accounts);

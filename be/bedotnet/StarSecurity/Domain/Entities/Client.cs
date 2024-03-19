@@ -10,28 +10,21 @@ using System.Threading.Tasks;
 
 namespace domain.Entities
 {
-    public class Client : Human
+    public class Client(Name name,
+		Gender gender,
+		string? contractNumber,
+		string? address,
+		Email email,
+		Guid? currentOfferId) : Human(name,
+              gender,
+              contractNumber,
+              address,
+              email)
     {
         // 1 - n with Offer
         //Missing, client can have multiple offers at a time 
-        public virtual ICollection<Offer> Offers { get; set; } //1-n relationship
-        public Guid? OfferId { get; protected set; }
-        public virtual Offer? CurrentOffer { get; protected set; } // hold the current offer
-
-        // Constructor của Client
-        public Client(Name name,
-            Gender gender,
-            string contractNumber,
-            string address,
-            Email email,
-            Offer currentOffer)
-            : base(name,
-                  gender,
-                  contractNumber,
-                  address,
-                  email)
-        {
-            CurrentOffer = currentOffer;
-        }
-    }
+        public virtual ICollection<Offer>? Offers { get; set; } //1-n relationship
+		public Guid? CurrentOfferId { get; set; } = currentOfferId;
+		public virtual Offer? CurrentOffer { get; set; } // hold the current offer
+	}
 }

@@ -3,6 +3,7 @@ using domain.Common.Enums;
 using domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +12,19 @@ namespace application.DTOs.EmployeesDTO
 {
 	public class UpdateEmployeeDTO : HumanUpdateDTO
 	{
-		public string EmployeeCode { get; protected set; }
-		public string EducationalQualification { get; protected set; }
-		public Role Role { get; protected set; }
-		public string Grade { get; protected set; }
-		public string? Achievements { get; protected set; }
-		public ProvideService ProvideService { get; protected set; }
-		public Guid BranchId { get; protected set; }
-		public Guid? CurrentOffer { get; protected set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string EmployeeCode { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string EducationalQualification { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Role Role { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string Grade { get; set; }
+		public string? Achievements { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public ProvideService ProvideService { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Guid BranchId { get; set; }
+		public Guid? CurrentOffer { get; set; }
 	}
 }

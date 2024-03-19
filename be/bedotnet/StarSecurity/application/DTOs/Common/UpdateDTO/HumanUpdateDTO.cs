@@ -11,15 +11,16 @@ namespace application.DTOs.Common.UpdateDTO
 {
     public abstract class HumanUpdateDTO : BasicUpdateDTO
 	{
-		[Required]
-		public Name Name { get; protected set; }
-		[Required]
-		public Gender Gender { get; protected set; }
-		public string? Address { get; protected set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string Name { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Gender Gender { get; set; }
+		public string? Address { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
 		[Phone]
-		public string? ContactNumber { get; protected set; }
-		[Required]
+		public string ContactNumber { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
 		[EmailAddress]
-		public Email Email { get; protected set; }
+		public string Email { get; set; }
 	}
 }

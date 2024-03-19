@@ -1,4 +1,5 @@
 ﻿using application.Persistences.Contracts.Common;
+using domain.Common.ValueObjects;
 using domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,6 @@ namespace application.Persistences.Contracts
 {
     public interface IBranchRepository : IGenericRepository<Branch>
 	{
+		Task<Branch> GetByNameAsync(Name Name);
 	}
 }

@@ -11,15 +11,21 @@ namespace domain.Entities
 {
     public class Account : Entity
     {
-        [Required]
-        [EmailAddress]
-        public Email Email { get; protected set; }
-        [Required]
-        public string PasswordHash { get; protected set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		[EmailAddress]
+        public Email Email { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string PasswordHash { get; set; }
 
-        // 1 - 1 with Employee
-        [Required]
-        public Guid EmployeeId { get; protected set; }
-        public virtual Employee Employee { get; protected set; }
-    }
+		// 1 - 1 with Employee
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Guid EmployeeId { get; set; }
+        public virtual Employee? Employee { get; set; }
+		public Account(Email email, string passwordHash, Guid employeeId) : base()
+		{
+			Email = email ?? throw new ArgumentNullException(nameof(email));
+			PasswordHash = passwordHash ?? throw new ArgumentNullException(nameof(passwordHash));
+			EmployeeId = employeeId;
+		}
+	}
 }

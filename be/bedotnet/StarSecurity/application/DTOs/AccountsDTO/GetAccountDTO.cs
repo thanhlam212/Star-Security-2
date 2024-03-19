@@ -11,8 +11,8 @@ namespace application.DTOs.AccountsDTO
 {
     public class GetAccountDTO : BasicGetDTO
     {
-        public Email Email { get; protected set; }
-        public string PasswordHash { get; protected set; }
-        public Employee Employee { get; protected set; }
+        public Email Email { get; set; }
+        public string PasswordHash { get; set; }
+        public Employee Employee { get; set; }
     }
 }

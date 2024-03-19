@@ -12,60 +12,46 @@ using System.Threading.Tasks;
 
 namespace domain.Entities
 {
-    public class Employee : Human
-    {
-        [Required]
-        public string EmployeeCode { get; protected set; }
-        [Required]
-        public string EducationalQualification { get; protected set; }
-        [Required]
-        public Role Role { get; protected set; }
-        [Required]
-        public string Grade { get; protected set; }
-        public string? Achievements { get; protected set; }
-		[Required]
-		public ProvideService ProvideService { get; protected set; }
+	public class Employee(Name name,
+		Gender gender,
+		string? contractNumber,
+		string? address,
+		Email email,
+		string employeeCode,
+		string educationalQualification,
+		Role role,
+		string grade,
+		string achievements,
+		ProvideService provideService,
+		Guid branchId,
+		Guid? currentOfferId)
+		: Human(name,
+			  gender,
+			  contractNumber,
+			  address,
+			  email)
+	{
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string EmployeeCode { get; set; } = employeeCode;
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string EducationalQualification { get; set; } = educationalQualification;
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Role Role { get; set; } = role;
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public string Grade { get; set; } = grade;
+		public string? Achievements { get; set; } = achievements;
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public ProvideService ProvideService { get; set; } = provideService;
 
 		//n-1 with Branch
-		[Required]
-        public Guid BranchId { get; protected set; }
-        public Branch Branch { get; protected set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public Guid BranchId { get; set; } = branchId;
+		public Branch? Branch { get; set; }
 
-        //1-n with Offer
-        public virtual ICollection<Offer> Offers { get; set; } //1-n relationship
-        public Guid? OfferId { get; protected set; }
-        public virtual Offer? CurrentOffer { get; protected set; } // hold the current offer
-
-        // Constructor of Employee
-        public Employee(Name name,
-            Gender gender,
-            string contractNumber,
-            string address,
-            Email email,
-            string employeeCode,
-            string educationalQualification,
-            Role role,
-            string grade,
-            string achievements,
-			ProvideService provideService,
-			Branch branch,
-            Offer currentOffer
-            )
-            : base(name,
-                  gender,
-                  contractNumber,
-                  address,
-                  email)
-        {
-            EmployeeCode = employeeCode;
-            EducationalQualification = educationalQualification;
-            Role = role;
-            Grade = grade;
-            Achievements = achievements;
-            ProvideService = provideService;
-			Branch = branch;
-            CurrentOffer = currentOffer;
-        }
-    }
+		//1-n with Offer
+		public virtual ICollection<Offer>? Offers { get; set; } //1-n relationship
+		public Guid? CurrentOfferId { get; set; } = currentOfferId;
+		public virtual Offer? CurrentOffer { get; set; } // hold the current offer
+	}
 }
 
