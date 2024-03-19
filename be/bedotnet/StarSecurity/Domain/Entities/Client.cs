@@ -13,6 +13,7 @@ namespace domain.Entities
     public class Client : Human
     {
         // 1 - n with Offer
+        //Missing, client can have multiple offers at a time 
         public virtual ICollection<Offer> Offers { get; set; } //1-n relationship
         public Guid? OfferId { get; protected set; }
         public virtual Offer? CurrentOffer { get; protected set; } // hold the current offer

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace application.Features.Accounts.Requests.Queries
 {
-    public class GetListAccountRequest : IRequest<List<GetAccountDTO>>
+    public class GetAllAccountRequest : IRequest<ICollection<GetAccountDTO>>
     {
 
     }
