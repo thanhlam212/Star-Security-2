@@ -65,7 +65,11 @@
                   class="text-gray-900 text-2xl dark:text-white hover:text-indigo-600">About Us</a>
               </li>
               <li>
-                  <a href="#" class="text-gray-900 text-2xl dark:text-white hover:text-indigo-600">Our Services</a>
+                  <a 
+                  routerLink="/user/services"
+                  routerLinkActive="active"  
+                  [routerLinkActiveOptions]="{ exact: true }"  
+                  class="text-gray-900 text-2xl dark:text-white hover:text-indigo-600">Our Services</a>
               </li>
           </ul>
       </div>

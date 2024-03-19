@@ -7,6 +7,7 @@ import { ClientModule } from './clients/client.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { AuthModule } from './auth/auth.module';
+import axios from 'axios';
 
 @NgModule({
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
