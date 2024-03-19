@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './feature/home/home.component';
 import { AboutComponent } from './feature/about/about.component';
-import { ServicesComponent } from './feature/services/services.component';
+import { ServicesComponent } from './feature/our-business/services.component';
 
 const routes: Routes = [
   {
