@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './feature/home/home.component';
 import { AboutComponent } from './feature/about/about.component';
-import { ServicesComponent } from './feature/our-business/services.component';
+import { OurBusinessComponent } from './feature/our-business/our-business.component';
 
 const routes: Routes = [
   {
@@ -23,7 +23,7 @@ const routes: Routes = [
       },
       {
         path:'services',
-        component: ServicesComponent,
+        component: OurBusinessComponent,
         data: { title: 'Our Business' },
         pathMatch: 'full'
       }
