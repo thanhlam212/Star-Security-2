@@ -1,5 +1,26 @@
-<div class="w-full">
+<!-- <div class="w-full">
   <app-navbar></app-navbar>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
-</div>
+</div> -->
+
+<ng-container *ngIf="!is404Page() && !isLoginPage()">
+  <ng-container *ngIf="isAdminPage()">
+    <app-sidebar></app-sidebar>
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+  </ng-container>
+  <ng-container *ngIf="!isAdminPage()">
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </ng-container>
+</ng-container>
+
+<ng-container *ngIf="isLoginPage()">
+  <router-outlet></router-outlet>
+</ng-container>
+
+<ng-container *ngIf="is404Page()">
+  <router-outlet></router-outlet>
+</ng-container>

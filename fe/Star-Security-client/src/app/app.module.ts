@@ -8,11 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { AuthModule } from './auth/auth.module';
 import axios from 'axios';
+import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 @NgModule({
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     declarations: [
         AppComponent,
+        ErrorPageComponent,
     ],
     providers: [DatePipe],
     bootstrap: [AppComponent],
