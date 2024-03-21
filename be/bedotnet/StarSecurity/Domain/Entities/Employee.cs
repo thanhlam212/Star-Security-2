@@ -21,7 +21,7 @@ namespace domain.Entities
 		string educationalQualification,
 		Role role,
 		string grade,
-		string achievements,
+		string? achievements,
 		ProvideService provideService,
 		Guid branchId,
 		Guid? currentOfferId)

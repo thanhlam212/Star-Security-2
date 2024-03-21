@@ -125,6 +125,9 @@
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "domain/1.0.0": {
+        "dependencies": {
+          "FluentValidation.DependencyInjectionExtensions": "11.9.0"
+        },
         "runtime": {
           "domain.dll": {}
         }

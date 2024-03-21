@@ -1,7 +1,7 @@
-﻿using application.DTOs.AccountsDTO.Validators;
+﻿using application.Contracts.Persistences;
+using application.DTOs.AccountsDTO.Validators;
 using application.Features.Accounts.Requests.Commands;
-using application.Persistences.Contracts;
-using AutoMapper;
+using domain.Common.Exceptions;
 using domain.Common.ValueObjects;
 using domain.Entities;
 using MediatR;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace application.Features.Accounts.Handlers.Commands
 {
-	public class CreateAccountCommandHandler : IRequestHandler<CreateAccountCommand, Guid>
+    public class CreateAccountCommandHandler : IRequestHandler<CreateAccountCommand, Guid>
 	{
 		private readonly IAccountRepository _accountRepository;
 		private readonly CreateAccountDTOValidator _validator;
@@ -30,7 +30,7 @@ namespace application.Features.Accounts.Handlers.Commands
 			var validationResult = await _validator.ValidateAsync(request.CreateAccountDTO);
 			if (!validationResult.IsValid)
 			{
-				throw new Exception();
+				throw new ValidationException(validationResult);
 			}
 			var account = new Account(
 				new Email(request.CreateAccountDTO.Email), 

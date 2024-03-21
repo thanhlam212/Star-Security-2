@@ -25,6 +25,6 @@ namespace application.DTOs.EmployeesDTO
 		public ProvideService ProvideService { get;	set; }
 		[Required(ErrorMessage = "{PropertyName} is required")]
 		public Guid BranchId { get; set; }
-		public Guid? CurrentOffer { get; set; }
+		public Guid? CurrentOfferId { get; set; }
 	}
 }

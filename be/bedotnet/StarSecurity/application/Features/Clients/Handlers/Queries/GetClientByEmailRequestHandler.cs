@@ -1,12 +1,12 @@
-﻿using application.DTOs.ClientsDTO;
+﻿using application.Contracts.Persistences;
+using application.DTOs.ClientsDTO;
 using application.Features.Clients.Requests.Queries;
-using application.Persistences.Contracts;
 using AutoMapper;
 using MediatR;
 
 namespace application.Features.Clients.Handlers.Queries
 {
-	public class GetClientByEmailRequestHandler : IRequestHandler<GetClientByEmailRequest, GetClientDTO>
+    public class GetClientByEmailRequestHandler : IRequestHandler<GetClientByEmailRequest, GetClientDTO>
 	{
 		private readonly IClientRepository _clientRepository;
 		private readonly IMapper _mapper;
@@ -20,7 +20,7 @@ namespace application.Features.Clients.Handlers.Queries
 		}
 		public async Task<GetClientDTO> Handle(GetClientByEmailRequest request, CancellationToken cancellationToken)
 		{
-			var client = await _clientRepository.GetByEmailAsync(request.Email) ?? throw new Exception("No Account found!");
+			var client = await _clientRepository.GetByEmailAsync(request.Email) ?? throw new Exception("No Client found!");
 			return _mapper.Map<GetClientDTO>(client);
 		}
 	}

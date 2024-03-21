@@ -1,14 +1,14 @@
-﻿using application.DTOs.EmployeesDTO;
+﻿using application.Contracts.Persistences;
+using application.DTOs.EmployeesDTO;
 using application.Features.Employees.Requests.Queries;
 using application.Features.Employees.Requests.Queries.Common;
-using application.Persistences.Contracts;
 using AutoMapper;
 using domain.Entities;
 using MediatR;
 
 namespace application.Features.Employees.Handlers.Queries
 {
-	public class GetEmployeeByConditionRequestHandler : IRequestHandler<GetSingleEmployeeRequest, GetEmployeeDTO>
+    public class GetEmployeeByConditionRequestHandler : IRequestHandler<GetSingleEmployeeRequest, GetEmployeeDTO>
 	{
 		private readonly IEmployeeRepository _employeeRepository;
 		private readonly IMapper _mapper;

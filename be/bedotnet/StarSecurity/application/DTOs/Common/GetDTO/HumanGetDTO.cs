@@ -2,6 +2,7 @@
 using domain.Common.ValueObjects;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,8 @@ namespace application.DTOs.Common.GetDTO
 
         public Name Name { get; set; }
         public Gender Gender { get; set; }
-        public string? Address { get; set; }
+		public DateTime DateOfBirth { get; set; }
+		public string? Address { get; set; }
         public string? ContactNumber { get; set; }
         public Email Email { get; set; }
     }
