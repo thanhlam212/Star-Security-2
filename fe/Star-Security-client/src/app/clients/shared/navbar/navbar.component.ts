@@ -10,19 +10,18 @@ import { Route, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angu
 
 export class NavbarComponent implements OnInit{
   header_variable = false;
-  loggedIn: boolean = false;
 
   constructor(){}
 
   ngOnInit(): void {
   }
 
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    if (window.scrollY > 0) {
+  @HostListener('window:scroll', ['$event']) onScroll(){
+  if(window.scrollY > 0){
       this.header_variable = true;
-    } else {
+  }else{
       this.header_variable = false;
     }
   }
+  
 }
