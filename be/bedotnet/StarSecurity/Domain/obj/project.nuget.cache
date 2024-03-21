@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Zu3u9lp/vNLyEpasUwZYpx/N2ZDFUHi5bKxckjWbOsr1AfJiQkmvJCQ2ioD1uy8I0Zn2VRL6+xu7Z1YJYRA7YQ==",
+  "dgSpecHash": "ysl9rVf6o7aO5QyZWdbHmBGI6TJjStaJav9O8Rou9QNvOxtA1RYze+h5U0SIi4tR7UU+4yot97OicgXrGiJzGQ==",
   "success": true,
-  "projectFilePath": "D:\\IT\\Theory\\ApTeach\\Project 3\\StarSecurity\\Star-Security-2\\be\\bedotnet\\StarSecurity\\Domain\\domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Star-Security\\be\\bedotnet\\StarSecurity\\Domain\\domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ACER\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

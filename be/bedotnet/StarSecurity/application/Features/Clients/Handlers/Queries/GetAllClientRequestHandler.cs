@@ -1,7 +1,7 @@
-﻿using application.DTOs.AccountsDTO;
+﻿using application.Contracts.Persistences;
+using application.DTOs.AccountsDTO;
 using application.DTOs.ClientsDTO;
 using application.Features.Clients.Requests.Queries;
-using application.Persistences.Contracts;
 using AutoMapper;
 using MediatR;
 using System;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace application.Features.Clients.Handlers.Queries
 {
-	public class GetAllClientRequestHandler : IRequestHandler<GetAllClientRequest, ICollection<GetClientDTO>>
+    public class GetAllClientRequestHandler : IRequestHandler<GetAllClientRequest, ICollection<GetClientDTO>>
 	{
 		private readonly IClientRepository _clientRepository;
 		private readonly IMapper _mapper;
@@ -26,7 +26,7 @@ namespace application.Features.Clients.Handlers.Queries
 		}
 		public async Task<ICollection<GetClientDTO>> Handle(GetAllClientRequest request, CancellationToken cancellationToken)
 		{
-			var clients = await _clientRepository.GetAllAsync() ?? throw new Exception("No Account found!");
+			var clients = await _clientRepository.GetAllAsync() ?? throw new Exception("No Client found!");
 			return _mapper.Map<ICollection<GetClientDTO>>(clients);
 		}
 	}

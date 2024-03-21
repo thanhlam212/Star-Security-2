@@ -1,6 +1,6 @@
-﻿using application.DTOs.BranchesDTO;
+﻿using application.Contracts.Persistences;
+using application.DTOs.BranchesDTO;
 using application.Features.Branches.Requests.Queries;
-using application.Persistences.Contracts;
 using AutoMapper;
 using MediatR;
 

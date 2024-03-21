@@ -1,14 +1,16 @@
-﻿using application.DTOs.AccountsDTO;
+﻿using application.Contracts.Persistences;
+using application.DTOs.AccountsDTO;
 using application.DTOs.AccountsDTO.Validators;
 using application.Features.Accounts.Requests.Commands;
-using application.Persistences.Contracts;
 using AutoMapper;
+using domain.Common.Exceptions;
 using domain.Common.ValueObjects;
+using domain.Entities;
 using MediatR;
 
 namespace application.Features.Accounts.Handlers.Commands
 {
-	public class UpdateAccountCommandHandler : IRequestHandler<UpdateAccountCommand, Unit>
+    public class UpdateAccountCommandHandler : IRequestHandler<UpdateAccountCommand, Unit>
 	{
 		private readonly IAccountRepository _accountRepository;
 		private readonly UpdateAccountDTOValidator _validator;
@@ -25,9 +27,10 @@ namespace application.Features.Accounts.Handlers.Commands
 			var validationResult = await _validator.ValidateAsync(request.UpdateAccountDTO);
 			if (!validationResult.IsValid)
 			{
-				throw new Exception();
+				throw new ValidationException(validationResult);
 			}
-			var account = await _accountRepository.GetByIdAsync(request.UpdateAccountDTO.Id) ?? throw new Exception("No Account found!");
+			var account = await _accountRepository.GetByIdAsync(request.UpdateAccountDTO.Id) 
+				?? throw new NotFoundException(nameof(Account), request.UpdateAccountDTO.Id);
 
 			account.Email = new Email(request.UpdateAccountDTO.Email);
 			account.PasswordHash = request.UpdateAccountDTO.PasswordHash;

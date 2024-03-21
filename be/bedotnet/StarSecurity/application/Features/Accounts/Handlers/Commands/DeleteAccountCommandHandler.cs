@@ -1,6 +1,7 @@
-﻿using application.Features.Accounts.Requests.Commands;
-using application.Persistences.Contracts;
+﻿using application.Contracts.Persistences;
+using application.Features.Accounts.Requests.Commands;
 using AutoMapper;
+using domain.Common.Exceptions;
 using domain.Entities;
 using MediatR;
 using System;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace application.Features.Accounts.Handlers.Commands
 {
-	public class DeleteAccountCommandHandler : IRequestHandler<DeleteAccountCommand, Unit>
+    public class DeleteAccountCommandHandler : IRequestHandler<DeleteAccountCommand, Unit>
 	{
 		private readonly IAccountRepository _accountRepository;
 
@@ -21,7 +22,8 @@ namespace application.Features.Accounts.Handlers.Commands
 		}
 		public async Task<Unit> Handle(DeleteAccountCommand request, CancellationToken cancellationToken)
 		{
-			var account = await _accountRepository.GetByIdAsync(request.Id) ?? throw new Exception("No Account found!");
+			var account = await _accountRepository.GetByIdAsync(request.Id) 
+				?? throw new NotFoundException(nameof(Account), request.Id);
 			var isDelete = await _accountRepository.DeleteAsync(account);
 
 			if (!isDelete)
