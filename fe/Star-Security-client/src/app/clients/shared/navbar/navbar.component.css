@@ -1,53 +1,18 @@
 .active {
-    border-bottom: 2px solid #7c3aed;
+    border-bottom: 2px solid #935af5;
     transform: scale(1.1);
     transition: border-bottom 0.3s ease, color 0.3s ease, transform 0.3s ease;
     color: #7c3aed;
   }
 
-  .header_change{
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-  }
-
-  .header_change .text-6xl {
-    font-size: 3rem;
-    transition: font-size 0.3s ease;
-  }
-
-  @media (max-width: 768px) {
-    .header_change .text-6xl {
-      font-size: 2.5rem; 
-      line-height: 1rem;
-    }
-  }
-
-  .header_change .text-2xl {
-    font-size: 1rem;
-    line-height: 2rem;
-    transition: font-size 0.3s ease;
-  }
-
-  @media (max-width: 768px) {
-    .header_change .text-2xl{
-      font-size: 1.25rem; 
-      line-height: 1.5rem;
-    }
-  }
-
-.btn-login{
-  box-shadow: inset 0 0 0 0 rgb(156 163 175);
-  transition: all .5s ease;
-  
+.header_change{
+  position: fixed;
+  border-bottom: none;
+  padding-inline: 100px;
+  width: 100%;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.btn-login:hover {
-  box-shadow: inset 200px 0 0 0 rgb(55 65 81);
-  color:  rgb(79 70 229);
-  background-color: rgb(55 65 81);
-  font-weight: bold;
-  letter-spacing: 15px;
+.bg-color{
+  background-color: #231f20;
 }
