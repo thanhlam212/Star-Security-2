@@ -1,7 +1,9 @@
-﻿using application.DTOs.EmployeesDTO.Validators;
+﻿using application.Contracts.Persistences;
+using application.DTOs.EmployeesDTO.Validators;
 using application.Features.Employees.Requests.Commands;
-using application.Persistences.Contracts;
 using AutoMapper;
+using domain.Common.Exceptions;
+using domain.Entities;
 using MediatR;
 
 namespace application.Features.Employees.Handlers.Commands
@@ -26,9 +28,10 @@ namespace application.Features.Employees.Handlers.Commands
             var validationResult = await _validator.ValidateAsync(request.UpdateEmployeeDTO);
             if (!validationResult.IsValid)
             {
-                throw new Exception();
+                throw new ValidationException(validationResult);
             }
-            var employee = await _employeeRepository.GetByIdAsync(request.UpdateEmployeeDTO.Id) ?? throw new Exception("No employee found!!");
+            var employee = await _employeeRepository.GetByIdAsync(request.UpdateEmployeeDTO.Id) 
+                ?? throw new NotFoundException(nameof(Employee), request.UpdateEmployeeDTO.Id);
             _mapper.Map(request.UpdateEmployeeDTO, employee);
 
             var isUpdated = await _employeeRepository.UpdateAsync(employee);

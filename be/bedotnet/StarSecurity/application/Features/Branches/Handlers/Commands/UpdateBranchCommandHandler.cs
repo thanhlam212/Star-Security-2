@@ -1,12 +1,14 @@
-﻿using application.DTOs.BranchesDTO.Validator;
+﻿using application.Contracts.Persistences;
+using application.DTOs.BranchesDTO.Validator;
 using application.Features.Branches.Requests.Commands;
-using application.Persistences.Contracts;
 using AutoMapper;
+using domain.Common.Exceptions;
+using domain.Entities;
 using MediatR;
 
 namespace application.Features.Branches.Handlers.Commands
 {
-	public class UpdateBranchCommandHandler : IRequestHandler<UpdateBranchCommand, Unit>
+    public class UpdateBranchCommandHandler : IRequestHandler<UpdateBranchCommand, Unit>
 	{
 		private readonly IBranchRepository _branchRepository;
 		private readonly UpdateBranchDTOValidator _validator;
@@ -26,9 +28,10 @@ namespace application.Features.Branches.Handlers.Commands
 			var validationResult = await _validator.ValidateAsync(request.UpdateBranchDTO);
 			if (!validationResult.IsValid)
 			{
-				throw new Exception();
+				throw new ValidationException(validationResult);
 			}
-			var branch = await _branchRepository.GetByIdAsync(request.UpdateBranchDTO.Id) ?? throw new Exception("No branch found!!");
+			var branch = await _branchRepository.GetByIdAsync(request.UpdateBranchDTO.Id) 
+				?? throw new NotFoundException(nameof(Branch), request.UpdateBranchDTO.Id);
 			_mapper.Map(request.UpdateBranchDTO, branch);
 
 			var isUpdated = await _branchRepository.UpdateAsync(branch); 

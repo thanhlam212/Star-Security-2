@@ -15,6 +15,8 @@ namespace application.DTOs.Common.CreateDTO
 		public string Name { get; set; }
 		[Required(ErrorMessage = "{PropertyName} is required")]
 		public Gender Gender { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public DateTime DateOfBirth { get; set; }
 		public string? Address { get; set; }
 		public string? ContactNumber { get; set; }
 		[Required(ErrorMessage = "{PropertyName} is required")]

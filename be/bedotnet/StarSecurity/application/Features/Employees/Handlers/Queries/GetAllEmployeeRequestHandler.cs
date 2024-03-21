@@ -1,7 +1,7 @@
-﻿using application.DTOs.ClientsDTO;
+﻿using application.Contracts.Persistences;
+using application.DTOs.ClientsDTO;
 using application.DTOs.EmployeesDTO;
 using application.Features.Employees.Requests.Queries.Common;
-using application.Persistences.Contracts;
 using AutoMapper;
 using MediatR;
 using System;

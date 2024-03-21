@@ -1,6 +1,6 @@
-﻿using application.DTOs.AccountsDTO;
+﻿using application.Contracts.Persistences;
+using application.DTOs.AccountsDTO;
 using application.Features.Accounts.Requests.Queries;
-using application.Persistences.Contracts;
 using AutoMapper;
 using MediatR;
 using System;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace application.Features.Accounts.Handlers.Queries
 {
-	public class GetAllAccountsRequestHandler : IRequestHandler<GetAllAccountsRequest, ICollection<GetAccountDTO>>
+    public class GetAllAccountsRequestHandler : IRequestHandler<GetAllAccountsRequest, ICollection<GetAccountDTO>>
 	{
 		private readonly IAccountRepository _accountRepository;
 		private readonly IMapper _mapper;

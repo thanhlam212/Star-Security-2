@@ -21,3 +21,4 @@ D:\IT\Theory\ApTeach\Project 3\StarSecurity\Star-Security-2\be\bedotnet\StarSecu
 D:\IT\Theory\ApTeach\Project 3\StarSecurity\Star-Security-2\be\bedotnet\StarSecurity\Domain\obj\Debug\net8.0\refint\domain.dll
 D:\IT\Theory\ApTeach\Project 3\StarSecurity\Star-Security-2\be\bedotnet\StarSecurity\Domain\obj\Debug\net8.0\domain.pdb
 D:\IT\Theory\ApTeach\Project 3\StarSecurity\Star-Security-2\be\bedotnet\StarSecurity\Domain\obj\Debug\net8.0\ref\domain.dll
+D:\IT\Theory\ApTeach\Project 3\StarSecurity\Star-Security-2\be\bedotnet\StarSecurity\Domain\obj\Debug\net8.0\domain.csproj.AssemblyReference.cache

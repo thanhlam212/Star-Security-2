@@ -1,5 +1,7 @@
-﻿using application.Features.Employees.Requests.Commands;
-using application.Persistences.Contracts;
+﻿using application.Contracts.Persistences;
+using application.Features.Employees.Requests.Commands;
+using domain.Common.Exceptions;
+using domain.Entities;
 using MediatR;
 
 namespace application.Features.Employees.Handlers.Commands
@@ -13,7 +15,8 @@ namespace application.Features.Employees.Handlers.Commands
         }
         public async Task<Unit> Handle(DeleteEmployeeCommand request, CancellationToken cancellationToken)
         {
-            var client = await _employeeRepository.GetByIdAsync(request.Id) ?? throw new Exception("No Employee found");
+            var client = await _employeeRepository.GetByIdAsync(request.Id) 
+                ?? throw new NotFoundException(nameof(Employee), request.Id);
             var isDelete = await _employeeRepository.DeleteAsync(client);
             if (!isDelete)
             {

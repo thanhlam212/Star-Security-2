@@ -1,14 +1,13 @@
-﻿using application.DTOs.BranchesDTO.Validator;
+﻿using application.Contracts.Persistences;
 using application.DTOs.ClientsDTO.Validators;
-using application.Features.Branches.Requests.Commands;
 using application.Features.Clients.Requests.Commands;
-using application.Persistences.Contracts;
+using domain.Common.Exceptions;
 using domain.Common.ValueObjects;
 using domain.Entities;
-using FluentValidation;
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -17,7 +16,7 @@ using System.Xml.Linq;
 
 namespace application.Features.Clients.Handlers.Commands
 {
-	public class CreateClientCommandHandler : IRequestHandler<CreateClientCommand, Guid>
+    public class CreateClientCommandHandler : IRequestHandler<CreateClientCommand, Guid>
 	{
 		private readonly IClientRepository _clientRepository;
 		private readonly CreateClientDTOValidator _validator;
@@ -35,7 +34,7 @@ namespace application.Features.Clients.Handlers.Commands
 			var validationResult = await _validator.ValidateAsync(request.CreateClientDTO);
 			if (!validationResult.IsValid)
 			{
-				throw new Exception();
+				throw new ValidationException(validationResult);
 			}
 			var client = new Client(
 				new Name(request.CreateClientDTO.Name),
@@ -43,8 +42,8 @@ namespace application.Features.Clients.Handlers.Commands
 				request.CreateClientDTO.Address,
 				request.CreateClientDTO.ContactNumber,
 				new Email(request.CreateClientDTO.Email),
-				request.CreateClientDTO.CurrentOfferId
-				);
+				request.CreateClientDTO.CurrentOfferId);
+
 			var isCreated = await _clientRepository.AddAsync(client);
 
 			if (!isCreated)

@@ -17,6 +17,8 @@ namespace domain.Common.Abstractions
 		public Name Name { get; set; }
 		[Required(ErrorMessage = "{PropertyName} is required")]
 		public Gender Gender { get; set; }
+		[Required(ErrorMessage = "{PropertyName} is required")]
+		public DateTime DateOfBirth { get; set; }
 		public string? Address { get; set; }
 		[Required(ErrorMessage = "{PropertyName} is required")]
 		[Phone]
