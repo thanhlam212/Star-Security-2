@@ -12,7 +12,7 @@ namespace application
 {
 	public static class ApplicationServicesRegistoration
 	{
-		public static IServiceCollection ConfigurationServices(this IServiceCollection services)
+		public static IServiceCollection ConfigurationApplicationServices(this IServiceCollection services)
 		{
 			services.AddAutoMapper(Assembly.GetExecutingAssembly());
 			services.AddMediatR(Assembly.GetExecutingAssembly());

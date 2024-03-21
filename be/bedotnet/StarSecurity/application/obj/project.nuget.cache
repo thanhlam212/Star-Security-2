@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lqsTvjvfU60oGb/amLPWm3TWQZMkNorH2CQvY5EtR6fhA2pn6MqAOtrj2bkclfBVvPDg+n2+MrsvncbAi8O0KA==",
+  "dgSpecHash": "MWn3znoibe/4yIIfVVmDHZp5g4/9yvJu54JjZ+VhYr5v7MiNfG4jPOYpvGp8VnA5TFfGWxIPq0u6U63D0yNQqQ==",
   "success": true,
-  "projectFilePath": "D:\\IT\\Theory\\ApTeach\\Project 3\\StarSecurity\\Star-Security-2\\be\\bedotnet\\StarSecurity\\application\\application.csproj",
+  "projectFilePath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\bedotnet\\StarSecurity\\application\\application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
