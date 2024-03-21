@@ -8,6 +8,9 @@ import { ClientRoutingModule } from './client-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OurBusinessComponent } from './feature/our-business/our-business.component';
+import { CareersWithUsComponent } from './feature/careers-with-us/careers-with-us.component';
+import { JobsDetailComponent } from './feature/jobs-detail/jobs-detail.component';
+import { JobsListComponent } from './feature/jobs-list/jobs-list.component';
 
 
 
@@ -19,6 +22,9 @@ import { OurBusinessComponent } from './feature/our-business/our-business.compon
     HomeComponent,
     AboutComponent,
     OurBusinessComponent,
+    CareersWithUsComponent,
+    JobsDetailComponent,
+    JobsListComponent,
   ],
   imports: [
     CommonModule,
