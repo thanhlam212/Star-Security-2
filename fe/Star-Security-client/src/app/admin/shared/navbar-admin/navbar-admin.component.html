@@ -1,0 +1,79 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list class="flex flex-col">
+      <a mat-list-item  
+      routerLink="/admin/dashboard"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      > 
+      <i class="fa-sharp fa-solid fa-chart-line"> Dashboard</i>
+    </a>
+
+      <a mat-list-item 
+      routerLink="/admin/employees"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      > 
+      <i class="fa-solid fa-users"> Employees</i>
+    </a>
+
+      <a mat-list-item 
+      routerLink="/admin"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      ><i class="fa-solid fa-briefcase"> Vacancies</i></a>
+
+      <a mat-list-item 
+      routerLink="/admin"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      ><i class="fa-solid fa-bell-concierge">Service Offered</i></a>
+
+      <a mat-list-item 
+      routerLink="/admin/profile-admin"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >
+      <i class="fa-solid fa-id-card"> Profile</i>
+    </a>
+
+      <a mat-list-item 
+      routerLink="/admin/payment"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      ><i class="fas fa-money-check-alt"> Payment</i></a>
+
+      <a mat-list-item 
+      routerLink="/admin"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      ><i class="fa-solid fa-flag"> Report</i></a>
+
+      <a mat-list-item 
+      routerLink="/admin"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      ><i class="fa-solid fa-building"> Department</i></a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      @if (isHandset$ | async) {
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      }
+      <span>Admin Page</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

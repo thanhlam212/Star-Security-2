@@ -6,9 +6,8 @@
 
 <ng-container *ngIf="!is404Page() && !isLoginPage()">
   <ng-container *ngIf="isAdminPage()">
-    <app-sidebar></app-sidebar>
-    <app-navbar></app-navbar>
-    <router-outlet></router-outlet>
+    <!-- <app-sidebar></app-sidebar> -->
+    <app-navbar-admin></app-navbar-admin>
   </ng-container>
   <ng-container *ngIf="!isAdminPage()">
     <app-navbar></app-navbar>
