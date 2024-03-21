@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Star-Security';
+  title = 'Star Security';
   constructor(private activatedRoute : ActivatedRoute, private router : Router){
 
   }
