@@ -15,7 +15,7 @@ COPY ./application/ ./application/
 
 COPY ./Domain/ ./Domain/
 
-RUN dotnet build -c Release -o /app/build ./application/application.csproj
+RUN dotnet build -c Release -o /app/publish ./application/application.csproj
 
 # Publish Application
 RUN dotnet publish  --self-contained --runtime linux-x64 --configuration Release -o /app/publish ./application/application.csproj
