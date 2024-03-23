@@ -23,10 +23,10 @@ RUN dotnet publish  --self-contained --runtime linux-x64 --configuration Release
 # Stage 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
-WORKDIR /app
+WORKDIR /src
 
 # Copy published output from the build stage
-COPY --from=build-env /app/publish .
+COPY --from=build-env /app/publish /src/
 
 EXPOSE 8443
 
