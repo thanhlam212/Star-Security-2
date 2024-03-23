@@ -14,7 +14,7 @@ COPY ./Domain/ ./Domain/
 RUN dotnet build -c Release -o /app/build ./application/application.csproj
 
 # Publish Application
-RUN dotnet publish  --self-contained --runtime linux-musl-x64 --configuration Release -o /app/publish ./application/application.csproj
+RUN dotnet publish  --self-contained --runtime linux-x64 --configuration Release -o /app/publish ./application/application.csproj
 
 # Stage 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
