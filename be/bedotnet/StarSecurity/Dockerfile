@@ -5,12 +5,16 @@ WORKDIR /app
 
 # Copy csproj files and restore dependencies
 COPY ./application/*.csproj ./application/
+
 COPY ./Domain/*.csproj ./Domain/
+
 RUN dotnet restore ./application/application.csproj
 
 # Copy source code and build the application
 COPY ./application/ ./application/
+
 COPY ./Domain/ ./Domain/
+
 RUN dotnet build -c Release -o /app/build ./application/application.csproj
 
 # Publish Application
@@ -25,7 +29,6 @@ WORKDIR /app
 COPY --from=build-env /app/publish .
 
 EXPOSE 8443
-EXPOSE 443
 
 ENTRYPOINT ["dotnet", "application.dll"]
 
