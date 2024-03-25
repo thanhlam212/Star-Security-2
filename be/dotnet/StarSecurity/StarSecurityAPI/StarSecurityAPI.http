@@ -1,0 +1,6 @@
+@StarSecurityAPI_HostAddress = http://localhost:5017
+
+GET {{StarSecurityAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
