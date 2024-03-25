@@ -4,17 +4,17 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
 
 # Copy csproj files and restore dependencies
-COPY ./application/*.csproj ./application/
+COPY ./Application/*.csproj ./Application/
 COPY ./Domain/*.csproj ./Domain/
-RUN dotnet restore ./application/
+RUN dotnet restore ./Application/
 
-# Copy source code and build the application
-COPY ./application/ ./application/
+# Copy source code and build the Application
+COPY ./Application/ ./Application/
 COPY ./Domain/ ./Domain/
-RUN dotnet build -c Release -o /app/publish ./application/
+RUN dotnet build -c Release -o /app/publish ./Application/
 
 # Publish Application
-RUN dotnet publish --self-contained --runtime linux-x64 --configuration Release -o /app/publish ./application/
+RUN dotnet publish --self-contained --runtime linux-x64 --configuration Release -o /app/publish ./Application/
 
 # Stage 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
@@ -25,7 +25,7 @@ COPY --from=build-env /app/publish /src/
 
 EXPOSE 8443
 
-ENTRYPOINT ["dotnet", "application.dll"]
+ENTRYPOINT ["dotnet", "Application.dll"]
 
 
 # Stage 1: Build
@@ -34,21 +34,21 @@ ENTRYPOINT ["dotnet", "application.dll"]
 # WORKDIR /app
 
 # # Copy csproj files and restore dependencies
-# COPY ./application/*.csproj ./application/
+# COPY ./Application/*.csproj ./Application/
 
 # COPY ./Domain/*.csproj ./Domain/
 
-# RUN dotnet restore ./application/application.csproj
+# RUN dotnet restore ./Application/Application.csproj
 
-# # Copy source code and build the application
-# COPY ./application/ ./application/
+# # Copy source code and build the Application
+# COPY ./Application/ ./Application/
 
 # COPY ./Domain/ ./Domain/
 
-# RUN dotnet build -c Release -o /app/publish ./application/application.csproj
+# RUN dotnet build -c Release -o /app/publish ./Application/Application.csproj
 
 # # Publish Application
-# RUN dotnet publish  --self-contained --runtime linux-x64 --configuration Release -o /app/publish ./application/application.csproj
+# RUN dotnet publish  --self-contained --runtime linux-x64 --configuration Release -o /app/publish ./Application/Application.csproj
 
 # # Stage 2: Runtime
 # FROM mcr.microsoft.com/dotnet/aspnet:8.0
@@ -60,7 +60,7 @@ ENTRYPOINT ["dotnet", "application.dll"]
 
 # EXPOSE 8443
 
-# ENTRYPOINT ["dotnet", "application.dll"]
+# ENTRYPOINT ["dotnet", "Application.dll"]
 
 
 
@@ -71,23 +71,23 @@ ENTRYPOINT ["dotnet", "application.dll"]
 # WORKDIR /src
 
 # # Copy csproj files and restore dependencies for Application
-# COPY ./application/*.csproj /src/application/
-# RUN dotnet restore /src/application/*.csproj
+# COPY ./Application/*.csproj /src/Application/
+# RUN dotnet restore /src/Application/*.csproj
 
 # # Copy csproj files and restore dependencies for Domain
 # COPY ./Domain/*.csproj /src/Domain/
 # RUN dotnet restore /src/Domain/*.csproj
 
-# # Copy source code and build the application for Application
-# COPY ./application/ /src/application/
-# RUN dotnet build -o /src/publish -r linux-x64 /p:PublishReadyToRun=true /src/application/*.csproj
+# # Copy source code and build the Application for Application
+# COPY ./Application/ /src/Application/
+# RUN dotnet build -o /src/publish -r linux-x64 /p:PublishReadyToRun=true /src/Application/*.csproj
 
-# # Copy source code and build the application for Domain
+# # Copy source code and build the Application for Domain
 # COPY ./Domain/ /src/Domain/
 # RUN dotnet build -o /src/domain -r linux-x64 /p:PublishReadyToRun=true /src/Domain/*.csproj
 
 # # Publish Application
-# RUN dotnet publish -o /src/publish -r linux-x64 --self-contained true --no-restore /p:PublishTrimmed=true /p:PublishReadyToRun=true /p:PublishSingleFile=true /src/application/*.csproj
+# RUN dotnet publish -o /src/publish -r linux-x64 --self-contained true --no-restore /p:PublishTrimmed=true /p:PublishReadyToRun=true /p:PublishSingleFile=true /src/Application/*.csproj
 
 # # Stage 2: Runtime
 # FROM mcr.microsoft.com/dotnet/aspnet:8.0 as base
@@ -105,7 +105,7 @@ ENTRYPOINT ["dotnet", "application.dll"]
 # # Healthcheck
 # HEALTHCHECK CMD curl --fail http://localhost || exit 1
 
-# # Command to start the application
+# # Command to start the Application
 # CMD ["./starSecurity"]
 
 
