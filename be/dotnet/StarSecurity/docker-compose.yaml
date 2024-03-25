@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  application:
+    build:
+      context: .
+      dockerfile: ./Application/Dockerfile
+    ports:
+      - "5000:5000"
+    restart: always
+
+  domain:
+    build:
+      context: .
+      dockerfile: ./Domain/Dockerfile
+
+  infrastructure:
+    build:
+      context: .
+      dockerfile: ./Infrastructure/Dockerfile
+
+  star_security_api:
+    build:
+      context: .
+      dockerfile: ./StarSecurityAPI/Dockerfile
+    ports:
+      - "5001:5000"
+    restart: always
