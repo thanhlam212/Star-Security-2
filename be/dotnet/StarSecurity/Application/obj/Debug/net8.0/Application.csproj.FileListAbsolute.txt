@@ -1,0 +1,31 @@
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\bin\Debug\net8.0\Application.deps.json
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\bin\Debug\net8.0\Application.dll
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\bin\Debug\net8.0\Application.pdb
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\bin\Debug\net8.0\Domain.dll
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\bin\Debug\net8.0\Domain.pdb
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\Application.dll
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\refint\Application.dll
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\Application.pdb
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Application\obj\Debug\net8.0\ref\Application.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Application.deps.json
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Application.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Application.pdb
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Domain.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Domain.pdb
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\refint\Application.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.pdb
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\ref\Application.dll

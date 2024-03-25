@@ -1,0 +1,25 @@
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\bin\Debug\net8.0\Domain.dll
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\bin\Debug\net8.0\Domain.pdb
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\Domain.dll
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\Domain.pdb
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\IT\Pratice\ASP.NET\StarSecurity\StarSecurity\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\bin\Debug\net8.0\Domain.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\bin\Debug\net8.0\Domain.pdb
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\Domain.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\Domain.pdb
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Domain\obj\Debug\net8.0\ref\Domain.dll
