@@ -11,12 +11,14 @@ import { AuthModule } from './auth/auth.module';
 import axios from 'axios';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ServicesDetailComponent } from './services-detail/services-detail.component';
 
 @NgModule({
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     declarations: [
         AppComponent,
         ErrorPageComponent,
+        ServicesDetailComponent,
     ],
     providers: [DatePipe, provideAnimationsAsync()],
     bootstrap: [AppComponent],
