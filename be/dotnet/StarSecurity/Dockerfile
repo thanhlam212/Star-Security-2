@@ -3,29 +3,39 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 
 WORKDIR /app
 
-# Copy csproj files and restore dependencies
+# Copy csproj files and restore dependencies for Application
 COPY ./Application/*.csproj ./Application/
+RUN dotnet restore ./Application/Application.csproj
+
+# Copy csproj files and restore dependencies for Domain
 COPY ./Domain/*.csproj ./Domain/
-RUN dotnet restore ./Application/
+RUN dotnet restore ./Domain/Domain.csproj
 
 # Copy source code and build the Application
 COPY ./Application/ ./Application/
+RUN dotnet build -c Release -o /app/publish/Application ./Application/Application.csproj
+
+# Copy source code and build the Domain
 COPY ./Domain/ ./Domain/
-RUN dotnet build -c Release -o /app/publish ./Application/
+RUN dotnet build -c Release -o /app/publish/Domain ./Domain/Domain.csproj
 
 # Publish Application
-RUN dotnet publish --self-contained --runtime linux-x64 --configuration Release -o /app/publish ./Application/
+RUN dotnet publish --self-contained --runtime linux-x64 --configuration Release -o /app/publish/Application ./Application/Application.csproj
 
 # Stage 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /src
 
-# Copy published output from the build stage
-COPY --from=build-env /app/publish /src/
+# Copy published output from the build stage for Application
+COPY --from=build-env /app/publish/Application .
+
+# Copy published output from the build stage for Domain
+COPY --from=build-env /app/publish/Domain ./Domain
 
 EXPOSE 8443
 
 ENTRYPOINT ["dotnet", "Application.dll"]
+
 
 # Stage 1: Build
 # FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
