@@ -25,8 +25,8 @@ COPY --from=build-env /app/publish /src/
 
 EXPOSE 8443
 
-ENTRYPOINT ["dotnet", "Application.dll"]
-
+# ENTRYPOINT ["dotnet", "Application.dll"]
+ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
 
 # Stage 1: Build
 # FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
