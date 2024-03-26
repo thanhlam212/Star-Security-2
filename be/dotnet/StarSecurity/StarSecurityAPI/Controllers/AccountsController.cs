@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace StarSecurityAPI.Controllers
 {
-	[Authorize(Roles = "Admin")]
+	//[Authorize(Roles = "Admin")]
 	[Route("v1/api/[controller]")]
 	[ApiController]
 	public class AccountsController : ControllerBase
