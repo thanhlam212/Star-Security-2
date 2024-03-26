@@ -1,8 +1,9 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
+COPY . /app
 COPY ./Domain/*.csproj ./app
 RUN dotnet restore
-COPY ./Domain/ ./app
+
 RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
