@@ -6,7 +6,7 @@
   }
 
 .header_change{
-  position: fixed;
+  position: relative;
   border-bottom: none;
   padding-inline: 100px;
   width: 100%;
