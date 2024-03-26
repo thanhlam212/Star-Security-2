@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Sao chép file dự án từ các thư mục khác nhau vào container
@@ -28,7 +28,7 @@ RUN dotnet publish Infrastructure/Infrastructure.csproj -c Release -o /app/Infra
 RUN dotnet publish StarSecurityAPI/StarSecurityAPI.csproj -c Release -o /app/StarSecurityAPI
 
 # Stage 3: Final
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
 # Sao chép các ứng dụng đã được build và publish vào container
