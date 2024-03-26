@@ -38,7 +38,7 @@ COPY --from=publish /app/Infrastructure ./Infrastructure
 COPY --from=publish /app/StarSecurityAPI ./StarSecurityAPI
 
 # Expose các cổng cần thiết
-EXPOSE 80
+EXPOSE 8080
 EXPOSE 443
 
 # Command để chạy các ứng dụng khi container được khởi chạy
