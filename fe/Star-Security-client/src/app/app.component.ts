@@ -19,6 +19,6 @@ export class AppComponent {
     return this.activatedRoute.snapshot.firstChild?.routeConfig?.path === 'auth';
   }
   is404Page() : boolean {
-    return this.activatedRoute.snapshot.firstChild?.routeConfig?.path === 'error';
+    return this.router.url.includes('/error');
   }
 }

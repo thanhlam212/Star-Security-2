@@ -6,7 +6,7 @@ import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { LoginComponent } from './login/login.component';
-
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
     RegisterComponent,
     AdminLoginComponent,
     LoginComponent,
+    ForgotPasswordComponent,
   ],
   imports: [
     CommonModule,
