@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 COPY ./Application/*.csproj /app/Application
 RUN dotnet restore
-COPY ./Application/ /app/Application
+COPY ./Application/ /app/
 RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
