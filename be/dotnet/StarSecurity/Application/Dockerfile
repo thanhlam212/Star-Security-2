@@ -1,7 +1,12 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 COPY . /app/
+
 COPY ./Application/*.csproj /app/Application
+COPY ./Domain/*.csproj ./app
+COPY ./Infrastructure/*.csproj ./app
+COPY ./StarSecurityAPI/*.csproj ./app
+
 RUN dotnet restore
 
 RUN dotnet build -c Release -o /app/build
