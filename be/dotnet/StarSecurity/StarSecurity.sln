@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarSecurityAPI", "StarSecu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{3855059F-944B-470B-8CDC-42A9ECFFEC9C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastrucutre", "Infrastrucutre\Infrastrucutre.csproj", "{2E25D26A-19C3-406A-9E67-348984903DDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{2E25D26A-19C3-406A-9E67-348984903DDB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{CCAA4491-BE39-4332-89D0-C96218174A92}"
 EndProject
