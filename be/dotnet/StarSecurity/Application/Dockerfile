@@ -3,9 +3,9 @@ WORKDIR /app
 COPY . /app/
 
 COPY ./Application/*.csproj /app/Application
-COPY ./Domain/*.csproj ./app
-COPY ./Infrastructure/*.csproj ./app
-COPY ./StarSecurityAPI/*.csproj ./app
+COPY ./Domain/*.csproj ./app/Domain
+COPY ./Infrastructure/*.csproj ./app/Infrastructure
+COPY ./StarSecurityAPI/*.csproj ./app/StarSecurityAPI
 
 RUN dotnet restore
 
