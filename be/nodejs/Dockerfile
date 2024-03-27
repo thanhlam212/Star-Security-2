@@ -8,7 +8,7 @@ RUN npm install && npm install jade
 
 COPY . .
 
-ENV PORT=8888
+ENV PORT=8080
 ENV PORT_REDIS=6379
 ENV HOST=52.77.78.167
 ENV DATABASE=star_security
@@ -21,6 +21,6 @@ ENV expire_Cookie=24*60*60*1000
 ENV EMAIL_USER=
 ENV EMAIL_PASS=root@ee0b1957fe71
 
-EXPOSE 8888
+EXPOSE 8080
 
 CMD [ "npm", "start" ]
