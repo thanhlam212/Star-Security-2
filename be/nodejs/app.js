@@ -1,3 +1,4 @@
+process.argv[1] = "--input-type=module";
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -5,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 import configDB from './config/configDB'
 var cors = require('cors');
-process.argv[1] = "--input-type=module";
 import configRedis from './config/configRedis'
 
 // var indexRouter = require('./routes/index');
