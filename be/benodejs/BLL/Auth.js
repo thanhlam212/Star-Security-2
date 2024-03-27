@@ -80,24 +80,24 @@ const refreshToken = async (refreshToken) => {
   return data;
 };
 
-const getAccount = async (user) => {
-  let data = {};
-  try {
-    let isExist = await checkUserEmail(user);
-    if (isExist) {
-      data.errCode = errCode.successCode;
-      data.message = `Get user successfully!`;
-      data.user = isExist;
-    } else {
-      data.errCode = errCode.wrongEmailCode;
-      data.message = `Your's email isn't exist`;
-    }
-  } catch (e) {
-    data.errCode = errCode.errServerCode;
-    data.message = `Server error`;
-  }
-  return data;
-}
+// const getAccount = async (user) => {
+//   let data = {};
+//   try {
+//     let isExist = await checkUserEmail(user);
+//     if (isExist) {
+//       data.errCode = errCode.successCode;
+//       data.message = `Get user successfully!`;
+//       data.user = isExist;
+//     } else {
+//       data.errCode = errCode.wrongEmailCode;
+//       data.message = `Your's email isn't exist`;
+//     }
+//   } catch (e) {
+//     data.errCode = errCode.errServerCode;
+//     data.message = `Server error`;
+//   }
+//   return data;
+// }
 
 const handleLoginBLL = async (data) => {
   let userData = {};
@@ -106,23 +106,18 @@ const handleLoginBLL = async (data) => {
     let refreshToken = createRefreshToken(data.email);
     let isExist = await checkUserEmail(data.email);
     if (isExist) {
-      let user = await authDAL.findUserAccountByEmail(data.email)
-      if (user.account.status.includes('Active')) {
-        let check = bcrypt.compareSync(data.password, user.account.password);
-        if (check) {
-          delete user.dataValues.account;
-          userData.errCode = errCode.successCode;
-          userData.message = `Authenticate user successfully!`;
-          userData.accessToken = accessToken;
-          userData.refreshToken = refreshToken;
-          userData.user = user;
-        } else {
-          userData.errCode = errCode.wrongPassCode;
-          userData.message = `Your password is wrong`;
-        }
+      console.log(isExist)
+      let user = await authDAL.findUserByEmail(data.email)
+      let check = bcrypt.compareSync(data.password, user.PasswordHash);
+      if (check) {
+        userData.errCode = errCode.successCode;
+        userData.message = `Authenticate user successfully!`;
+        userData.accessToken = accessToken;
+        userData.refreshToken = refreshToken;
+        userData.user = user.employee;
       } else {
-        userData.message = `Your account inactive`;
-        userData.errCode = errCode.wrongEmailCode;
+        userData.errCode = errCode.wrongPassCode;
+        userData.message = `Your password is wrong`;
       }
     } else {
       userData.message = `Your email doesn't exist`;
@@ -202,5 +197,5 @@ module.exports = {
   handleLoginBLL,
   forgotPassword,
   resetPassword,
-  getAccount
+  // getAccount
 };

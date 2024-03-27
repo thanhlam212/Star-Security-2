@@ -16,11 +16,11 @@ const handleLogin = async (req, res) => {
 
     if (data.errCode !== 0) return res.status(401).send(data.message)
 
+    res.cookie('jwt', data.accessToken, { httpOnly: true, sameSite: 'Lax', secure: true, maxAge: 24 * 60 * 60 * 1000 });
     res.cookie('refresh_token', data.refreshToken, { httpOnly: true, sameSite: 'Lax', secure: true, maxAge: 24 * 60 * 60 * 1000 });
     res.status(200).json({
         message: data.message,
         user: data.user || {},
-        accessToken: data.accessToken
     })
 }
 
@@ -29,6 +29,7 @@ const handleLogout = (req, res) => {
 
     if (!cookies.refresh_token) return res.sendStatus(204)
 
+    res.clearCookie('jwt', { httpOnly: true, sameSite: 'Lax', secure: true })
     res.clearCookie('refresh_token', { httpOnly: true, sameSite: 'Lax', secure: true })
     res.status(200).json({ message: 'Logout successfully' })
 }
@@ -45,9 +46,9 @@ const refreshToken = async (req, res) => {
 
     if (data.errCode !== 0) return res.status(401).send('Unauthorized')
 
+    res.cookie('jwt', data.accessToken, { httpOnly: true, sameSite: 'Lax', secure: true, maxAge: 24 * 60 * 60 * 1000 });
     return res.status(200).json({
         message: data.message,
-        accessToken: data.accessToken
     })
 }
 
@@ -93,22 +94,22 @@ const resetPassword = async (req, res) => {
     });
 };
 
-const getAccount = async (req, res) => {
-    const user = req.user
+// const getAccount = async (req, res) => {
+//     const user = req.user
 
-    if (!user) return res.status(401).send('Unauthorized')
+//     if (!user) return res.status(401).send('Unauthorized')
 
-    let data = await authBLLs.getAccount(user)
+//     let data = await authBLLs.getAccount(user)
 
-    if (data.errCode === 1) return res.status(500).send(data.message)
+//     if (data.errCode === 1) return res.status(500).send(data.message)
 
-    if (data.errCode !== 0) return res.status(401).send('Unauthorized')
+//     if (data.errCode !== 0) return res.status(401).send('Unauthorized')
 
-    return res.status(200).json({
-        message: data.message,
-        user: data ? data.user : {}
-    })
-}
+//     return res.status(200).json({
+//         message: data.message,
+//         user: data ? data.user : {}
+//     })
+// }
 
 module.exports = {
     handleLogin,
@@ -116,5 +117,5 @@ module.exports = {
     refreshToken,
     forgotPassword,
     resetPassword,
-    getAccount
+    // getAccount
 }
