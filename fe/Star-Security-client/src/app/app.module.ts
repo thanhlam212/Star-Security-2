@@ -31,8 +31,6 @@ import { appReducer } from './state';
         ClientModule,
         AuthModule,
         AdminModule,
-
-        
         StoreModule.forRoot(appReducer)
     ],
 })
