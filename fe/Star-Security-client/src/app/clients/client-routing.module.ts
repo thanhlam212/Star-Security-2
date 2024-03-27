@@ -5,7 +5,8 @@ import { HomeComponent } from './feature/home/home.component';
 import { AboutComponent } from './feature/about/about.component';
 import { OurBusinessComponent } from './feature/our-business/our-business.component';
 import { CareersWithUsComponent } from './feature/careers-with-us/careers-with-us.component';
-import { JobsDetailComponent } from './feature/jobs-detail/jobs-detail.component';
+import { JobsListComponent } from './feature/jobs-list/jobs-list.component';
+import { JobFormApplyComponent } from './feature/job-form-apply/job-form-apply.component';
 
 const routes: Routes = [
   {
@@ -36,14 +37,14 @@ const routes: Routes = [
         pathMatch: 'full'
       },
       {
-        path:'jobs-details',
-        component: JobsDetailComponent,
+        path:'jobs-apply',
+        component: JobFormApplyComponent,
         data: { title: 'Jobs Details' },
         pathMatch: 'full'
       },
       {
         path:'jobs-list',
-        component: JobsDetailComponent,
+        component: JobsListComponent,
         data: { title: 'Jobs List' },
         pathMatch: 'full'
       }

@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace StarSecurityAPI.Controllers
 {
-	//[Authorize(Roles = "Admin")]
-	[Route("v1/api/[controller]")]
+	[Authorize(Roles = "Admin")]
+	[Route("api/v1/[controller]")]
 	[ApiController]
 	public class ClientsController : ControllerBase
 	{

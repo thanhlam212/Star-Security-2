@@ -1,10 +1,6 @@
 ﻿using Application.DTOs.AccountsDTO;
-using Application.DTOs.BranchesDTO;
 using Application.Features.Accounts.Requests.Commands;
 using Application.Features.Accounts.Requests.Queries;
-using Application.Features.Branches.Requests.Commands;
-using Application.Features.Branches.Requests.Queries;
-using Application.Features.Clients.Handlers.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,8 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace StarSecurityAPI.Controllers
 {
-	//[Authorize(Roles = "Admin")]
-	[Route("v1/api/[controller]")]
+	[Authorize(Roles = "Admin")]
+	[Route("api/v1/[controller]")]
 	[ApiController]
 	public class AccountsController : ControllerBase
 	{

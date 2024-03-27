@@ -9,8 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OurBusinessComponent } from './feature/our-business/our-business.component';
 import { CareersWithUsComponent } from './feature/careers-with-us/careers-with-us.component';
-import { JobsDetailComponent } from './feature/jobs-detail/jobs-detail.component';
 import { JobsListComponent } from './feature/jobs-list/jobs-list.component';
+import { JobFormApplyComponent } from './feature/job-form-apply/job-form-apply.component';
 
 
 
@@ -23,8 +23,8 @@ import { JobsListComponent } from './feature/jobs-list/jobs-list.component';
     AboutComponent,
     OurBusinessComponent,
     CareersWithUsComponent,
-    JobsDetailComponent,
     JobsListComponent,
+    JobFormApplyComponent,
   ],
   imports: [
     CommonModule,
