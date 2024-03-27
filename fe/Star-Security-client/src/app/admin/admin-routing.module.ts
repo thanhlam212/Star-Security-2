@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EmployeeComponent } from './featured/employee/employee.component';
 import { DashboardComponent } from './featured/dashboard/dashboard.component';
-import { ProfileAdminComponent } from './featured/profile-admin/profile-admin.component';
+
 import { PaymentComponent } from './featured/payment/payment.component';
+import { CustomerManagementComponent } from './featured/customer-management/customer-management.component';
+import { DepartmentComponent } from './featured/department/department.component';
+import { VacanciesComponent } from './featured/vacancies/vacancies.component';
 
 const routes: Routes = [
   {
@@ -20,14 +23,24 @@ const routes: Routes = [
         data:{ title: 'Employee Manager' }
       },
       {
-        path:'profile-admin',
-        component: ProfileAdminComponent,
-        data:{ title: 'Profile Admin' }
+        path:'customer',
+        component: CustomerManagementComponent,
+        data:{ title: 'Customer Management'}
+      },
+      {
+        path:'department',
+        component: DepartmentComponent,
+        data:{ title: 'Deparment'}
       },
       {
         path:'payment',
         component: PaymentComponent,
         data:{ title: 'Payment' }
+      },
+      {
+        path:'vacancies',
+        component: VacanciesComponent,
+        data:{ title: 'Vacancies'}
       },
       {
         path: '**',
