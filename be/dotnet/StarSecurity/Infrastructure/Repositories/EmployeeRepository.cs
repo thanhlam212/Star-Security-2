@@ -1,5 +1,4 @@
 ﻿using Application.Contracts.Persistences;
-using Domain.Common.Enums;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Repositories.Common;

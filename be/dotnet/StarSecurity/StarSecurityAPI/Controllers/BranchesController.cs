@@ -1,7 +1,6 @@
 ﻿using Application.DTOs.BranchesDTO;
 using Application.Features.Branches.Requests.Commands;
 using Application.Features.Branches.Requests.Queries;
-using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -10,8 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace StarSecurityAPI.Controllers
 {
-	//[Authorize(Roles = "Admin")]
-	[Route("v1/api/[controller]")]
+	[Authorize(Roles = "Admin")]
+	[Route("api/v1/[controller]")]
 	[ApiController]
 	public class BranchesController : ControllerBase
 	{

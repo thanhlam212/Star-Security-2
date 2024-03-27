@@ -11,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Infrastructure.Repositories.Common;
 using StarSecurityAPI.Data;
-using Infrastrucutre.Repositories;
 
 namespace Infrastructure
 {

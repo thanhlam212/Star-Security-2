@@ -3126,7 +3126,7 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
-      "Infrastrucutre/1.0.0": {
+      "Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -3139,10 +3139,10 @@
           "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
         },
         "compile": {
-          "bin/placeholder/Infrastrucutre.dll": {}
+          "bin/placeholder/Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Infrastrucutre.dll": {}
+          "bin/placeholder/Infrastructure.dll": {}
         }
       }
     }
@@ -8866,17 +8866,17 @@
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
     },
-    "Infrastrucutre/1.0.0": {
+    "Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../Infrastrucutre/Infrastrucutre.csproj",
-      "msbuildProject": "../Infrastrucutre/Infrastrucutre.csproj"
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Application >= 1.0.0",
       "Domain >= 1.0.0",
-      "Infrastrucutre >= 1.0.0",
+      "Infrastructure >= 1.0.0",
       "MediatR >= 12.2.0",
       "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter >= 8.0.3",
       "Microsoft.EntityFrameworkCore >= 8.0.3",
@@ -8920,8 +8920,8 @@
             "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj": {
               "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj"
             },
-            "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastrucutre\\Infrastrucutre.csproj": {
-              "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastrucutre\\Infrastrucutre.csproj"
+            "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

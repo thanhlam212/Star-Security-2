@@ -9,7 +9,7 @@ using StarSecurityAPI.Data;
 
 #nullable disable
 
-namespace Infrastrucutre.Migrations
+namespace Infrastructure.Migrations
 {
     [DbContext(typeof(StarSecurityAPIContext))]
     [Migration("20240324113443_init")]

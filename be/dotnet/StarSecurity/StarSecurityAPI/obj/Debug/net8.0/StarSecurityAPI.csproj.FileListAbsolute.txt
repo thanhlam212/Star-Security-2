@@ -529,10 +529,8 @@ D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecuri
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\Application.dll
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\Domain.dll
-D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\Infrastrucutre.dll
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\Application.pdb
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\Domain.pdb
-D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\Infrastrucutre.pdb
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\obj\Debug\net8.0\StarSecurityAPI.csproj.AssemblyReference.cache
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\obj\Debug\net8.0\StarSecurityAPI.GeneratedMSBuildEditorConfig.editorconfig
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\obj\Debug\net8.0\StarSecurityAPI.AssemblyInfoInputs.cache
@@ -555,3 +553,5 @@ D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecuri
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\obj\Debug\net8.0\StarSecurityAPI.pdb
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\obj\Debug\net8.0\StarSecurityAPI.genruntimeconfig.cache
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\obj\Debug\net8.0\ref\StarSecurityAPI.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\Infrastructure.dll
+D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\StarSecurityAPI\bin\Debug\net8.0\Infrastructure.pdb

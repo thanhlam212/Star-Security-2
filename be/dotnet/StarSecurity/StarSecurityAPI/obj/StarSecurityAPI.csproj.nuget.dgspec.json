@@ -138,14 +138,14 @@
         }
       }
     },
-    "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastrucutre\\Infrastrucutre.csproj": {
+    "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastrucutre\\Infrastrucutre.csproj",
-        "projectName": "Infrastrucutre",
-        "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastrucutre\\Infrastrucutre.csproj",
+        "projectUniqueName": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastrucutre\\obj\\",
+        "outputPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -258,8 +258,8 @@
               "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj": {
                 "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj"
               },
-              "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastrucutre\\Infrastrucutre.csproj": {
-                "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastrucutre\\Infrastrucutre.csproj"
+              "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }

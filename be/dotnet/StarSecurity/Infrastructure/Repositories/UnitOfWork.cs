@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastrucutre.Repositories
+namespace Infrastructure.Repositories
 {
 	public class UnitOfWork : IUnitOfWork
 	{

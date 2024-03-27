@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace StarSecurityAPI.Controllers
 {
 	[Authorize(Roles = "Admin")]
-	[Route("v1/api/[controller]")]
+	[Route("api/v1/[controller]")]
 	[ApiController]
 	public class ClientsController : ControllerBase
 	{
@@ -29,7 +29,7 @@ namespace StarSecurityAPI.Controllers
 			return Ok(clients); // Thêm Ok() để trả về một HTTP 200 OK response với dữ liệu đã lấy được
 		}
 
-		// GET api/<ClientsController>/5
+		// GET api/<ClientsController>/Search/Id/5
 		[HttpGet]
 		[Route("Search/Id/{id}")]
 		public async Task<ActionResult<GetClientDTO>> GetClientById(Guid id)

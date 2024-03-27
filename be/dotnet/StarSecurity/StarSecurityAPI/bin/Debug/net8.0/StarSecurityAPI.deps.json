@@ -10,7 +10,7 @@
         "dependencies": {
           "Application": "1.0.0",
           "Domain": "1.0.0",
-          "Infrastrucutre": "1.0.0",
+          "Infrastructure": "1.0.0",
           "MediatR": "12.2.0",
           "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.3",
@@ -2137,7 +2137,7 @@
           "Domain.dll": {}
         }
       },
-      "Infrastrucutre/1.0.0": {
+      "Infrastructure/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
           "Domain": "1.0.0",
@@ -2148,7 +2148,7 @@
           "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
         },
         "runtime": {
-          "Infrastrucutre.dll": {}
+          "Infrastructure.dll": {}
         }
       }
     }
@@ -3443,7 +3443,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Infrastrucutre/1.0.0": {
+    "Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

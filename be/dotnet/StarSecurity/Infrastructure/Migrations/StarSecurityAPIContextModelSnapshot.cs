@@ -8,7 +8,7 @@ using StarSecurityAPI.Data;
 
 #nullable disable
 
-namespace Infrastrucutre.Migrations
+namespace Infrastructure.Migrations
 {
     [DbContext(typeof(StarSecurityAPIContext))]
     partial class StarSecurityAPIContextModelSnapshot : ModelSnapshot

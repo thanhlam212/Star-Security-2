@@ -1,5 +1,4 @@
 ﻿using Application.Contracts.Persistences.Common;
-using Domain.Common.Enums;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
