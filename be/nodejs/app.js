@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 import configDB from './config/configDB'
 var cors = require('cors');
+process.argv[1] = "--input-type=module";
 import configRedis from './config/configRedis'
 
 // var indexRouter = require('./routes/index');
