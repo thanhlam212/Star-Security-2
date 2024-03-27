@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AdminRoutingModule } from './admin-routing.module';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
-import { ProfileAdminComponent } from './featured/profile-admin/profile-admin.component';
+
 import { EmployeeComponent } from './featured/employee/employee.component';
 import { PaymentComponent } from './featured/payment/payment.component';
 import { CreateEmployeeComponent } from './featured/employee/create-employee/create-employee.component';
@@ -18,18 +18,23 @@ import { DashboardComponent } from './featured/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { DepartmentComponent } from './featured/department/department.component';
+import { CustomerManagementComponent } from './featured/customer-management/customer-management.component';
+import { VacanciesComponent } from './featured/vacancies/vacancies.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     SidebarComponent,
-    ProfileAdminComponent,
     EmployeeComponent,
     PaymentComponent,
     CreateEmployeeComponent,
     EditEmployeeComponent,
     NavbarAdminComponent,
-    DashboardComponent
+    DashboardComponent,
+    DepartmentComponent,
+    CustomerManagementComponent,
+    VacanciesComponent
   ],
   imports: [
     CommonModule,
