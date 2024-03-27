@@ -1,5 +1,5 @@
 import { EEmployeeActions, EmployeeActions } from "./employee.actions";
-import { IEmployeeLoginState, IEmployeeState } from "./employee.slates";
+import { IEmployeeLoginState, IEmployeeState } from "./employee.states";
 
 
 const initialLoginState: IEmployeeLoginState = {

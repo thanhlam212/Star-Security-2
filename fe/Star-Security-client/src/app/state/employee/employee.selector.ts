@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import { IEmployeeLoginState, IEmployeeState } from "./employee.slates";
+import { IEmployeeLoginState, IEmployeeState } from "./employee.states";
 
 const getEmployeeState = createFeatureSelector<IEmployeeState>('employee');
 
