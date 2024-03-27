@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OurBusinessComponent } from './feature/our-business/our-business.component';
 import { CareersWithUsComponent } from './feature/careers-with-us/careers-with-us.component';
-import { JobsListComponent } from './feature/jobs-list/jobs-list.component';
 import { JobFormApplyComponent } from './feature/job-form-apply/job-form-apply.component';
 
 
@@ -23,7 +22,6 @@ import { JobFormApplyComponent } from './feature/job-form-apply/job-form-apply.c
     AboutComponent,
     OurBusinessComponent,
     CareersWithUsComponent,
-    JobsListComponent,
     JobFormApplyComponent,
   ],
   imports: [
