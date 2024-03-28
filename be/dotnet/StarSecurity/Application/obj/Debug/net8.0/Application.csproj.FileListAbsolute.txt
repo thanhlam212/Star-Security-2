@@ -29,3 +29,19 @@ D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Applicatio
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\refint\Application.dll
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.pdb
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\ref\Application.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Application.deps.json
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Application.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Application.pdb
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Domain.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\bin\Debug\net8.0\Domain.pdb
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\refint\Application.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\Application.pdb
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Application\obj\Debug\net8.0\ref\Application.dll

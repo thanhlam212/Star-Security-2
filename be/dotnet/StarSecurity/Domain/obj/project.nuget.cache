@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "527/ttcrDJX+sXB7P4eYvtbYwLOdEpxeOxY5Ph2BXmb0Qh7EqWNZXaWgJjN2gdIcRgcnYP5CFZWgz5GXQDtQDw==",
+  "dgSpecHash": "vFfgXDZ1Gc41c+wwMnyKsRb5iDRlModEqFu8ihN9xd1hbFjJsSQ5BgA/hN31IOaDwv9OvH2I6YoUH4Oq++anlg==",
   "success": true,
-  "projectFilePath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Star-security\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ADMIN\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    "C:\\Users\\ACER\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }

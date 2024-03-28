@@ -5,8 +5,7 @@ import { DashboardComponent } from './featured/dashboard/dashboard.component';
 
 import { PaymentComponent } from './featured/payment/payment.component';
 import { CustomerManagementComponent } from './featured/customer-management/customer-management.component';
-import { DepartmentComponent } from './featured/department/department.component';
-import { VacanciesComponent } from './featured/vacancies/vacancies.component';
+import { BranchesComponent } from './featured/branches/branches.component';
 
 const routes: Routes = [
   {
@@ -16,6 +15,11 @@ const routes: Routes = [
         path:'dashboard',
         component:DashboardComponent,
         data:{ title: 'Dashboard' }
+      },
+      {
+        path:'branches',
+        component: BranchesComponent,
+        data:{ title: 'Branches' }
       },
       {
         path:'employees',
@@ -28,19 +32,9 @@ const routes: Routes = [
         data:{ title: 'Customer Management'}
       },
       {
-        path:'department',
-        component: DepartmentComponent,
-        data:{ title: 'Deparment'}
-      },
-      {
         path:'payment',
         component: PaymentComponent,
         data:{ title: 'Payment' }
-      },
-      {
-        path:'vacancies',
-        component: VacanciesComponent,
-        data:{ title: 'Vacancies'}
       },
       {
         path: '**',
