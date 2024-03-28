@@ -1,4 +1,3 @@
-process.argv[1] = "--input-type=module";
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -16,7 +15,7 @@ import indexRoute from './routes/index'
 var app = express();
 
 //cors
-let whitelist = ['http://localhost:5173', 'http://127.0.0.1:5173', 'http://localhost:4200'];
+let whitelist = ['http://localhost:5173', 'http://127.0.0.1:5173'];
 let corsOptions = {
   origin: (origin, callback) => {
     if (!origin) {

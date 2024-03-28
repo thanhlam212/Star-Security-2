@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 import AuthController from "../controller/Auth"
 import verifyJWT from '../middleware/authenticator'
-import cors from 'cors'
 
 const authRoute = (app) => {
     router.post("/login", AuthController.handleLogin);
