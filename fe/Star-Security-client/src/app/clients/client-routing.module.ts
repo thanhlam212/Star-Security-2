@@ -6,6 +6,7 @@ import { AboutComponent } from './feature/about/about.component';
 import { OurBusinessComponent } from './feature/our-business/our-business.component';
 import { CareersWithUsComponent } from './feature/careers-with-us/careers-with-us.component';
 import { JobFormApplyComponent } from './feature/job-form-apply/job-form-apply.component';
+import { ProfileComponent } from './feature/profile/profile.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,11 @@ const routes: Routes = [
         data: { title: 'Jobs Details' },
         pathMatch: 'full'
       },
+      {
+        path:'profile',
+        component: ProfileComponent,
+        data: { title: 'Your Profile'}
+      }
     ]
   }
 ]
