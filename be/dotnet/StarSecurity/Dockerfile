@@ -39,6 +39,6 @@ COPY --from=publish /app/StarSecurityAPI ./StarSecurityAPI
 
 # Expose port
 EXPOSE 8080
-EXPOSE 443
+# EXPOSE 443
 
 CMD ["dotnet", "StarSecurityAPI/StarSecurityAPI.dll"]
