@@ -11,6 +11,9 @@ import { OurBusinessComponent } from './feature/our-business/our-business.compon
 import { CareersWithUsComponent } from './feature/careers-with-us/careers-with-us.component';
 import { JobsListComponent } from './feature/jobs-list/jobs-list.component';
 import { JobFormApplyComponent } from './feature/job-form-apply/job-form-apply.component';
+import { ProfileComponent } from './feature/profile/profile.component';
+
+
 
 
 
@@ -25,6 +28,7 @@ import { JobFormApplyComponent } from './feature/job-form-apply/job-form-apply.c
     CareersWithUsComponent,
     JobsListComponent,
     JobFormApplyComponent,
+    ProfileComponent,
   ],
   imports: [
     CommonModule,
