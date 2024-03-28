@@ -18,9 +18,8 @@ import { DashboardComponent } from './featured/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { DepartmentComponent } from './featured/department/department.component';
 import { CustomerManagementComponent } from './featured/customer-management/customer-management.component';
-import { VacanciesComponent } from './featured/vacancies/vacancies.component';
+import { BranchesComponent } from './featured/branches/branches.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -32,9 +31,8 @@ import { VacanciesComponent } from './featured/vacancies/vacancies.component';
     EditEmployeeComponent,
     NavbarAdminComponent,
     DashboardComponent,
-    DepartmentComponent,
     CustomerManagementComponent,
-    VacanciesComponent
+    BranchesComponent,
   ],
   imports: [
     CommonModule,
