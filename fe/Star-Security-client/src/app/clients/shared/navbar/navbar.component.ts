@@ -1,3 +1,4 @@
+import { AuthServiceService } from './../../../auth/services/auth-service.service';
 import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Route, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
@@ -10,10 +11,13 @@ import { Route, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angu
 
 export class NavbarComponent implements OnInit{
   header_variable = false;
+  isLoggedIn: boolean = false;
+  showDropdown: boolean = false;
 
-  constructor(){}
+  constructor(private authService: AuthServiceService){}
 
   ngOnInit(): void {
+    this.isLoggedIn = this.authService.isLoggedIn();
   }
 
   @HostListener('window:scroll', ['$event']) onScroll(){
@@ -23,5 +27,12 @@ export class NavbarComponent implements OnInit{
       this.header_variable = false;
     }
   }
+
+  toggleDropdown(): void {
+    this.showDropdown = !this.showDropdown;
+  }
   
+  logout(): void {
+    this.authService.logout();
+  }
 }

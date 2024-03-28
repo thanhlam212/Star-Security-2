@@ -38,13 +38,29 @@
       <span class="ml-1 text-2xl xl:block lg:hidden dark:text-amber-300">Star Security</span>
     </a>
     <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-      <button 
-      routerLink="/auth/login"
-      class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700  rounded text-base mt-4 md:mt-0">Login
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
+      <ng-container *ngIf="isLoggedIn; else loginButton">
+        <!-- Hiển thị avatar -->
+        <div class="relative" (click)="toggleDropdown()">
+          <!-- Avatar của người dùng -->
+          <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="/assets/images/user-avatar.jpg" alt="user avatar">
+          <div *ngIf="showDropdown" class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profile</a>
+            <a (click)="logout()" class="cursor-poniter block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
+          </div>
+        </div>
+      </ng-container>
+      <ng-template #loginButton>
+        <!-- Hiển thị nút "Login" nếu chưa đăng nhập -->
+        <button 
+          routerLink="/auth/login"
+          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700  rounded text-base mt-4 md:mt-0"
+        >
+          Login
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </ng-template>
     </div>
   </div>
 </header>
