@@ -8445,19 +8445,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\ACER\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\Star-security\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\obj\\",
+      "projectPath": "D:\\Star-security\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "D:\\Star-security\\Star-Security-2\\be\\dotnet\\StarSecurity\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8471,11 +8476,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Application\\Application.csproj": {
-              "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Application\\Application.csproj"
+            "D:\\Star-security\\Star-Security-2\\be\\dotnet\\StarSecurity\\Application\\Application.csproj": {
+              "projectPath": "D:\\Star-security\\Star-Security-2\\be\\dotnet\\StarSecurity\\Application\\Application.csproj"
             },
-            "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\IT\\Theory\\ApTeach\\Project 3\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj"
+            "D:\\Star-security\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Star-security\\Star-Security-2\\be\\dotnet\\StarSecurity\\Domain\\Domain.csproj"
             }
           }
         }

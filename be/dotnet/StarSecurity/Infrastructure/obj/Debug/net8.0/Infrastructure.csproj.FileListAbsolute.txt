@@ -38,3 +38,23 @@ D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Infrastruc
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 D:\IT\Theory\ApTeach\Project 3\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\bin\Debug\net8.0\Application.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\bin\Debug\net8.0\Domain.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\bin\Debug\net8.0\Application.pdb
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\bin\Debug\net8.0\Domain.pdb
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CopyComplete
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+D:\Star-security\Star-Security-2\be\dotnet\StarSecurity\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll

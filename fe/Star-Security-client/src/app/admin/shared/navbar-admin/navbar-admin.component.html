@@ -21,43 +21,26 @@
       <i class="fa-solid fa-users"> Employees</i>
     </a>
 
-      <a mat-list-item 
-      routerLink="/admin/vacancies"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      ><i class="fa-solid fa-briefcase"> Vacancies</i></a>
+    <a mat-list-item 
+    routerLink="/admin/customer"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    > 
+    <i class="fa-solid fa-users"> customers</i>
+  </a>
 
-      <a mat-list-item 
-      routerLink="/admin"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      ><i class="fa-solid fa-bell-concierge">Service Offered</i></a>
-
-      <a mat-list-item 
-      routerLink="/admin/profile-admin"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      >
-      <i class="fa-solid fa-id-card"> Profile</i>
-    </a>
 
       <a mat-list-item 
       routerLink="/admin/payment"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
-      ><i class="fas fa-money-check-alt"> Payment</i></a>
+      ><i class="fa-solid fa-coins">Payments</i></a>
 
       <a mat-list-item 
-      routerLink="/admin"
+      routerLink="/admin/branches"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
-      ><i class="fa-solid fa-flag"> Report</i></a>
-
-      <a mat-list-item 
-      routerLink="/admin/department"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      ><i class="fa-solid fa-building"> Department</i></a>
+      ><i class="fa-solid fa-building">Branches</i></a>
     </mat-nav-list>
   </mat-sidenav>
 
