@@ -30,7 +30,7 @@ builder.Services.AddCors(o =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP HTTPS request pipeline.
 if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
