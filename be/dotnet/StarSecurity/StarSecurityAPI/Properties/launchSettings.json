@@ -24,7 +24,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:8080,https://api-aspnet-star.huynn.io.vn",
+      "applicationUrl": "http://localhost:8080;https://api-aspnet-star.huynn.io.vn",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
